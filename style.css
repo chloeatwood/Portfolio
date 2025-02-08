@@ -86,3 +86,11 @@ pre {
     list-style: none;
 }
 
+.squareMiscStuff {
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}
+
