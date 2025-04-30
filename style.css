@@ -14,9 +14,15 @@ body {
     padding: 0;
 }
 
-img {
+.profile-pic {
+    transition: transform 0.3s ease;
     max-width: 100%;
 }
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
 
 header {
     background-color: #4A5240;
@@ -24,19 +30,44 @@ header {
     padding: 10px 0;
 }
 
+
 nav ul {
     list-style: none;
-    display: flex;
+    display:flex;
     justify-content: center;
+   
 }
 
-nav li {
+nav li{
     margin: 0 20px;
+   
 }
+
+.languages {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.languages ul {
+    display: flex;
+}
+
+.software {
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}
+
 
 nav a {
     text-decoration: none;
-    color: #F4F1E1;
+    color: #c7d3bf;
 }
 
 h1 {
