@@ -15,78 +15,50 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
     </header>
-    
 
     <section id="about">
-        <!-- Languages and Skills -->
-         <div class="container">
-            <img src="./Images/me.jpeg" alt="Profile Picture" class="center"  style="border:5px solid #294936;">
+        <!-- About Me and Skills Section -->
+        <div class="container">
+            <img src="./Images/me.jpeg" alt="Profile Picture" class="center" style="border:5px solid #294936;">
             <h1>About Me</h1>
             <h2>Chloe Atwood</h2>
             <p style="font-family: 'Courier New', Courier, monospace; text-align: center;">Software Engineering Student</p>
-            <p>I am currently a Junior Software Engineering Student at Iowa State University where I will graduate in December 2026. 
-                I am currently an Undergraduate Research Assistant in the Virtual Reality Applications Lab here at Iowa State. 
-                Some of my hobbies include video gaming, walking my dogs and reading. </p>
-         </div>
-         <hr>
+            <p>I am currently a Junior Software Engineering Student at Iowa State University where I will graduate in December 2026. I am an Undergraduate Research Assistant in the Virtual Reality Applications Lab here at Iowa State. Some of my hobbies include video gaming, walking my dogs, and reading.</p>
+        </div>
+        <hr>
 
-         <div class="container">
+        <div class="container">
             <h2>Skills and Programming Languages</h2>
             <ul class="languages">
-                <li><img src="./Images/C++.png" alt="C and C++ Logo" width="50" style="margin: 10px;"></li>
-                <li><img src="./Images/C.png" alt="C Logo" width="55" style="margin: 10px;"></li>
-                <li><img src="./Images/c-sharp-c-seeklogo.png" alt="C Sharp Logo" width="50" style="margin: 10px;"></li>
-                <li><img src="./Images/Java.png" alt="Java Logo" width="30" height="60" style="margin: 10px;"></li>
-                <li> <img src="./Images/HTML.png" alt="HTML Logo" width="50" style="margin: 10px;"></li>
-                <li><img src="./Images/CSS.png" alt="CSS Logo" width="40" height="50" style="margin: 10px;"></li>
-                <li><img src="./Images/JavaScript.png" alt="JavaScript Logo" width="50" height="50" style="margin: 10px;"></li>
-                <li><img src="./Images/Python.png" alt="Python Logo" width="50" height="50" style="margin: 10px;"></li>
+                <!-- Skill Images here -->
             </ul>
-
-            <ul class="squareMiscStuff">
-                <li><img src="./Images/Excel.png" alt="Excel Logo" width="50" style="margin: 10px;"></li>
-                <li><img src="./Images/Word.png" alt="Word Logo" width="50" style="margin: 10px;"></li>
-                <li><img src="./Images/Git.png" alt="Git Logo" width="80" style="margin: 10px;"></li>
-            </ul>
-
-            <ul class="software">
-                <li><img src="./Images/Blender.png" alt="Blender Logo" width="100" style="margin: 10px;"></li>
-                <li><img src="./Images/Unity.png" alt="Unity Logo" width="100" style="margin: 10px;"></li>
-                <li><img src="./Images/AndroidStudio.svg" alt="Android Studio Logo" width="150" style="margin: 10px;"></li>
-                <li><img src="./Images/SolidWorks.png" alt="SolidWorks Logo" width="150" style="margin: 10px;"></li>
-
-            </ul>
-            <hr>
-        
-            
-         </div>
-
+        </div>
     </section>
 
     <section id="projects">
-        <!-- AR game, word search generator -->
         <h1>Projects</h1>
-        <p>To view these projects visit my github linked here: <a href="https://github.com/chloeatwood">GitHub</a>. You can also find them by clicking on the image under each project or by following the gitHub link at the bottom of the page.</p>
+        <p>To view these projects, visit my GitHub linked here: <a href="https://github.com/chloeatwood">GitHub</a>. You can also find them by clicking on the image under each project or by following the GitHub link at the bottom of the page.</p>
         
-        
-        <div>
+        <!-- Word Search Generator Project -->
+        <div class="project-card">
             <h2>Word Search Generator</h2>
-            <a href="https://github.com/chloeatwood/WordSearchGenerator"> <img src="./Images/Search.png" alt="Word Search Generator" width="200" class="center"></a>
+            <a href="https://github.com/chloeatwood/WordSearchGenerator">
+                <img src="./Images/Search.png" alt="Word Search Generator" width="200" class="project-img">
+            </a>
             <p>This project involved creating a Word Search Generator in C. It is used in a terminal.
                 In order to run it you must navigate to the folder location inside your terminal and type:
                 <br>make WordSearchGenerator <br> After that you may use it to create a square word search. To do this 
                 type ./WordSearchGenerator 'Number of rows/columns you want' 'As many words as you want'. An example 
                 of this would be to type: <br> ./WordSearchGenerator 20 Books Chloe WebDevelopment Software Engineer</p>
-            <hr>
+        </div>
 
-         </div> 
-        
-
-         <div>
+        <!-- Mini Unity Game -->
+        <div class="project-card">
             <h2>Mini Unity Game</h2>
-            <a href="https://github.com/chloeatwood/UnityPractice"><img src="./Images/LivingRoom.png" alt="Living Room Map Image For Game" width="300" class="center"></a>
+            <a href="https://github.com/chloeatwood/UnityPractice">
+                <img src="./Images/LivingRoom.png" alt="Living Room Map Image For Game" width="300" class="project-img">
+            </a>
             <p>A game developmet so I could learn Unity. The image is the base of the room you spawn in. Everything in
                 the image was created by me in blender. In this game you play as a mouse and need to run around the living 
                 room and find all of the cheese before the time runs out. In order to collect all the cheese you must first
@@ -94,16 +66,15 @@
                 high enough to do the parkour for a limited amount of time before you will have to go collect the cheese again. 
                 There is one special piece of cheese that must be collected although you might want to save it for last because 
                 if you collect it and do not have enough of the other cheese it will respawn.
-            </p>
+            </p>            
+        </div>
 
-            <hr>
-
-         </div>
-
-        <div>
-
-            <h2>AR mobile mini game</h2>
-            <a href="https://github.com/chloeatwood/UnityAR-Practice"><img src="./Images/Cheese.png" alt="Cheese" width="300" class="center"></a>
+        <!-- AR Mobile Game -->
+        <div class="project-card">
+            <h2>AR Mobile Mini Game</h2>
+            <a href="https://github.com/chloeatwood/UnityAR-Practice">
+                <img src="./Images/Cheese.png" alt="Cheese" width="300" class="project-img">
+            </a>
             <p>A mobile version of the last game that is played in Augmented Reality. It was created in Unity and utilizes Vuforia. All the same rules apply in this app as in the 
                 previous version except you must play it on your phone. Once you load up the app you must scan an image target after putting
                 it on the floor in order to spawn the room so you can play. You must the use your phone as your eyes in the game to look around.
@@ -111,40 +82,54 @@
                 be a lot harder that way. Be careful, this game may sound fun but it is a lot more difficult in this version than the last.
             </p>
 
-            <hr>
+        </div>
 
-         </div>
-
-         <div>
+        <!-- Portfolio Project -->
+        <div class="project-card">
             <h2>Portfolio</h2>
-            <a href="https://github.com/chloeatwood/Portfolio"><img src="./Images/WebDeve.jpg" alt="Web Development" width ="300" class="center"></a>
-            <p>This is the portfolio project you're currently viewing. It was built using only HTML and CSS, but as my Web Development class progresses, I plan to enhance it with JavaScript. Stay tuned for future updates!</p>
-            <hr>
+            <a href="https://github.com/chloeatwood/Portfolio">
+                <img src="./Images/WebDeve.jpg" alt="Web Development" width="300" class="project-img">
+            </a>
+            <p>This is the portfolio project you're currently viewing. It was built using only HTML and CSS. Recently Enhanced with JavaScript and better styling!</p>
 
-         </div>
+        </div>
 
-         <div>
+        <!-- Blender Creations -->
+        <div class="project-card">
             <h2>Blender Creations</h2>
-            <a href="https://github.com/chloeatwood/BlenderStuff"><img src="./Images/tieFighter.png" alt="Tie Fighter" width="300" class="center"></a>
+            <a href="https://github.com/chloeatwood/BlenderStuff">
+                <img src="./Images/tieFighter.png" alt="Tie Fighter" width="300" class="project-img">
+            </a>
             <p>I created and rendered this image using Blender as part of my journey into 3D design. Learning Blender has been both fun and rewarding, and I enjoy experimenting with new techniques. Click on the image to explore my repository and see more of my Blender creations!</p>
-         </div>
-         <hr>
 
+        </div>
     </section>
 
     <section id="contact">
-        <!-- Linkedin, github, email -->
-         <div>
-            <h1>Contact Me</h1>
-            <p>You can reach me at catwood0419@gmail.com</p>
-            <p>Github url: <a href="https://github.com/chloeatwood">https://github.com/chloeatwood</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/chloe-atwood-b4b3882b2/">https://www.linkedin.com/in/chloe-atwood-b4b3882b2/</a></p>
-         </div>
-
+        <h1>Contact Me</h1>
+        <p>You can reach me at catwood0419@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/chloeatwood">https://github.com/chloeatwood</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/chloe-atwood-b4b3882b2/">Chloe Atwood LinkedIn</a></p>
     </section>
 
     <footer>
         <p style="color:#F0EAD6;">&copy; 2025 Chloe Atwood</p>
     </footer>
+
+
+    <script>
+        // Colors for the card backgrounds
+        const colors = ['#C5EFCB', '#EF946C', '#D1BCE3'];
+
+        // Get all the project cards
+        const cards = document.querySelectorAll('.project-card');
+
+        // Function to assign random background color
+        cards.forEach(card => {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            card.style.backgroundColor = randomColor;
+        });
+    </script>
+
 </body>
 </html>
