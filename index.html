@@ -1,68 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chloe Atwood | Portfolio</title>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Chloe Atwood Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
     <header>
-        <div class="logo">Chloe Atwood</div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <div class="logo">Chloe Atwood</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Hi, I'm <span>Chloe</span></h1>
-            <p>Software Engineer | UI Designer | Problem Solver</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
+<section class="hero">
+  <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
+  
+  <div class="hero-slides">
+    <div class="hero-text active">
+      <h1>Hi, I'm <span>Chloe Atwood</span></h1>
+      <p>Software Engineering Student | Undergraduate Research Assistant</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+
+    <div class="hero-text">
+      <h1>Programming Languages</h1>
+      <p>Creating responsive, accessible, and visually engaging websites</p>
+    </div>
+
+    <div class="hero-text">
+      <h1>Software Knowledge</h1>
+      <p>Building immersive experiences and interactive installations</p>
+    </div>
+
+    <div class="hero-text">
+      <h1>Interests</h1>
+      <p>Building immersive experiences and interactive installations</p>
+    </div>
+  </div>
+
+  <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+</section>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-text');
+
+function changeSlide(direction) {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + direction + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+</script>
+
 
     <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I’m a Junior Software Engineering student passionate about building
-            intuitive applications and designing beautiful user experiences.
-        </p>
+      <img
+        src="./Images/me.jpeg"
+        alt="Profile Picture"
+        class="center profile-pic"
+        style="border: 5px solid #270722; margin-top: 20px"
+      />
+      <h2>About Me</h2>
+      <p>
+        I’m a Junior Software Engineering student passionate about building
+        intuitive applications and designing beautiful user experiences.
+      </p>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2>Projects</h2>
+      <h2>Projects</h2>
+
+      <!-- Mobile Applications Subsection -->
+      <div class="project-subsection" id="mobile-applications">
+        <h3>Mobile Applications</h3>
         <div class="project-grid">
-            <div class="project-card">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Chat 'n Rate</h3>
-                <p>Social review platform built with Android & Spring Boot.</p>
+          <div class="project-card">
+            <div class="video-wrapper">
+              <video controls>
+                <source src="Videos/newChatNRate.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
-            <div class="project-card">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Digital Recipe Box</h3>
-                <p>React & Node.js app for managing meal prep recipes.</p>
-            </div>
-            <div class="project-card">
-                <img src="project3.jpg" alt="Project 3">
-                <h3>Dungeon Crawler</h3>
-                <p>Pathfinding game with C++ & ncurses, featuring Fog of War.</p>
-            </div>
+            <h4>Chat n Rate</h4>
+            <p>
+              As part of a team of four, I helped develop Chat n Rate, a mobile
+              app built with Android Studio and Spring Boot that lets users
+              review movies, video games, and books. The app includes real-time
+              chat with friends, the ability to write reviews, leave comments,
+              and like posts. Users can sort and filter reviews, and live
+              updates keep the feed fresh and engaging. This project highlights
+              collaborative full-stack mobile development with real-time
+              features and backend integration.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <img src="./Images/Cheese.png" alt="Cheese" class="project-img" />
+            <h4>AR Mobile Mini Game</h4>
+            <p>
+              A mobile version of the last game that is played in Augmented
+              Reality. It was created in Unity and utilizes Vuforia. All the
+              same rules apply in this app as in the previous version except you
+              must play it on your phone. Once you load up the app you must scan
+              an image target after putting it on the floor in order to spawn
+              the room so you can play. You must the use your phone as your eyes
+              in the game to look around. Moving is done by controller buttons
+              on the screen although you may also attempt to walk about in the
+              real world, the game will just be a lot harder that way. Be
+              careful, this game may sound fun but it is a lot more difficult in
+              this version than the last.
+            </p>
+          </div>
         </div>
+      </div>
+
+      <!-- Game Development Subsection --> 
+       <div class="project-subsection" id="game-development"> 
+        <h3>Game Development</h3> 
+        <div class="project-grid"> 
+            <div class="project-card"> 
+                <a href="https://github.com/chloeatwood/DungeonGame"> 
+                    <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img"> </a>
+                    <h4>Dungeon Crawler</h4> 
+                    <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated dungeons, 
+                        intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command line. 
+                        A custom min-heap event system manages turn-based gameplay, showcasing object-oriented design and 
+                        low-level programming. To see how to play it click on the image!</p> 
+                    </div> 
+                </div> 
+                <div class="project-grid"> 
+                    <div class="project-card"> 
+                        <img src="./Images/LivingRoom.png" alt="Living Room Map Image For Game" class="project-img"> 
+                        <h4>Unity Mini Game</h4> 
+                        <p>A game I developed so I could learn Unity. The image is the base of the room you spawn in. 
+                            Everything in the image was created by me in blender. In this game you play as a mouse and 
+                            need to run around the living room and find all of the cheese before the time runs out. 
+                            In order to collect all the cheese you must first find the cheese that allows you to jump 
+                            so you can do a little bit of parkour. Be careful as you can only jump high enough to do the 
+                            parkour for a limited amount of time before you will have to go collect the cheese again. 
+                            There is one special piece of cheese that must be collected although you might want to save 
+                            it for last because if you collect it and do not have enough of the other cheese it will 
+                            respawn. 
+                        </p> 
+                    </div> 
+                </div> 
+            </div>
+
+
+            <!-- Web Development Subsection --> 
+             <div class="project-subsection" id="web-development"> 
+                <h3>Web Development</h3> 
+                <div class="project-grid"> 
+                    <div class="project-card"> 
+                        <img src="project2.jpg" alt="Digital Recipe Box" /> 
+                        <h4>Digital Recipe Box</h4> 
+                        <p>React & Node.js app for managing meal prep recipes.</p> 
+                    </div> 
+                    <div class="project-card"> 
+                        <img src="project3.jpg" alt="Web Development Projects" /> 
+                        <h4>Movie Website project thing</h4> 
+                        <p>Web Dev Stuff</p> 
+                    </div> 
+                    <div class="project-card"> 
+                        <img src="project3.jpg" alt="Web Development Projects" /> 
+                        <h4>Portfolio</h4> 
+                        <p>Web Dev Stuff</p> 
+                    </div> 
+                    <div class="project-card"> 
+                        <img src="project3.jpg" alt="Web Development Projects" /> 
+                        <h4>Misc?</h4> 
+                        <p>Web Dev Stuff</p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="project-subsection" id="utilities-tools"> 
+                <h3>Utilities & Tools</h3> 
+                <div class="project-grid"> 
+                    <div class="project-card"> 
+                        <h4>Word Search Generator</h4> 
+                        <p>Command-line word search puzzle generator written in C.</p> 
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- Modeling and Visualization Subsection --> 
+             <div class="project-subsection" id="modeling-visualization"> 
+                <h3>Modeling and Visualization</h3> 
+                <div class="project-grid"> 
+                    <div class="project-card"> 
+                        <img src="project3.jpg" alt="Blender Creations" /> 
+                        <h4>Blender Creations</h4> 
+                        <p>Blender Stuff</p> 
+                    </div> 
+                    <div class="project-card"> 
+                        <img src="project3.jpg" alt="Blender Creations" /> 
+                        <h4>Web Art</h4> 
+                        <p>Built interactive, visually striking pieces entirely with HTML and CSS. 
+                            No images required. Used gradients, animations, and creative shapes to 
+                            turn simple code into unique, responsive art that works on any screen size.
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="project-card"> 
+                    <img src="project3.jpg" alt="Blender Creations" /> 
+                    <h4>Mandelbrot</h4> 
+                    <p>Mandelbrot</p> 
+                </div> 
+            </div> 
+        </div> 
+
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:catwood0419@gmail.com">catwood0419@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/chloe-atwood-b4b3882b2/" target="_blank">Profile</a></p>
-        <p>GitHub: <a href="https://github.com/chloeatwood" target="_blank">Projects</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Chloe Atwood. All rights reserved.</p>
-    </footer>
-</body>
+    <section id="contact" class="contact"> 
+        <h2>Contact</h2> 
+        <p> Email: 
+            <a href="mailto:catwood0419@gmail.com">catwood0419@gmail.com</a> 
+        </p> 
+        <p> LinkedIn: 
+            <a href="https://www.linkedin.com/in/chloe-atwood-b4b3882b2/" target="_blank" >Profile</a > 
+        </p> 
+        <p> GitHub: 
+            <a href="https://github.com/chloeatwood" target="_blank">Projects</a> 
+        </p> 
+    </section> 
+    <footer> 
+        <p>&copy; 2025 Chloe Atwood. All rights reserved.</p> 
+    </footer> 
+    <script> 
+    // Colors for the card backgrounds 
+    const colors = ["#5C5C99", "#748b75", "#cc3363"]; 
+    //Get all the project cards 
+    const cards = document.querySelectorAll(".project-card"); 
+    // // Function to assign random background color 
+    cards.forEach((card) => { const randomColor = colors[Math.floor(Math.random() * colors.length)]; 
+    card.style.backgroundColor = randomColor; 
+    }); 
+    </script> 
+    </body>
+  </body>
 </html>
