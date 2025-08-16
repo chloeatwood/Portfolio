@@ -138,6 +138,7 @@ header nav a:hover {
   padding: 20px;
   width: 100%;
   max-width: 700px;
+  min-width: 200px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -154,6 +155,7 @@ header nav a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* optional, for style */
   display: block;
   margin: 0 auto; /* centers the video */
+  max-width: 800;
 }
 
 .project-card img {
@@ -193,5 +195,58 @@ footer {
   width: 100%;
   height: 100%;
 }
+
+.languages {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.languages ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.languages li {
+    display: flex;
+}
+
+.lang-item {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent */
+  backdrop-filter: blur(8px); /* frosted glass blur */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  color: black;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* soft border */
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+  bottom: 40%; /* places tooltip above image */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* soft shadow for depth */
+}
+
+
+
+.lang-item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 
