@@ -1,186 +1,116 @@
-/*
-Dark Purple: 270722
-Tea Green: C5EFCB
-Ebony: 4A5240
-Atomic Tangerine: EF946C
-Thistle: D1BCE3
-Ivory: F4F1E1
-*/
-
-ul li a {
-    display: inline-block;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #F4F1E1;
-    transition: transform 0.2s, background-color #C5EFCB;
-}
-
-ul li a:hover {
-    background-color: #C5EFCB;
-    transform: scale(1.05);
-    color: #270722;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #F4F1E1;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fceade;
+    color: #333745;
+    line-height: 1.6;
 }
-
-.profile-pic {
-    transition: transform 0.3s ease;
-    max-width: 100%;
-}
-
-.profile-pic:hover {
-    transform: scale(1.05);
-}
-
 
 header {
-    background-color: #4A5240;
-    color: #F4F1E1;
-    padding: 10px 0;
-}
-
-
-nav ul {
-    list-style: none;
-    display:flex;
-    justify-content: center;
-   
-}
-
-nav li{
-    margin: 0 20px;
-   
-}
-
-.lang-item {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    padding: 1rem 2rem;
+    background: #333745;
+    color: white;
 }
 
-h3 {
-    text-align: center;
-    color: #4A5240;
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-span {
-    color: #4A5240;
+header nav a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.languages {
-    margin-left: auto;
-    margin-right: auto;
+header nav a:hover {
+    color: #d81159;
+}
+
+.hero {
+    height: 90vh;
     display: flex;
+    align-items: center;
     justify-content: center;
+    background: linear-gradient(to right, #1789fc, #6efafb);
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero h1 span {
+    color: #d81159;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.btn {
+    background: #d81159;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
     text-decoration: none;
-    list-style: none;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-.languages ul {
-    display: flex;
-    flex-wrap: wrap;
+.btn:hover {
+    background: #b60f4a;
 }
 
-.languages li {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-
-nav a {
-    text-decoration: none;
-    color: #c7d3bf;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #270722;
-    font-family: cursive;
-    text-align: center;
-    text-decoration: underline;
-}
-
-h2 {
-    color: #270722;
+.about, .projects, .contact {
+    padding: 4rem 2rem;
     text-align: center;
 }
 
-p {
-    color: #4A5240;
-    text-align: center;
-    margin: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #4A5240;
-    color: #F4F1E1;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-width: medium;
-}
-
-/* Flexbox Layout for Projects */
-#projects {
-    display: flex;
-    flex-wrap: wrap; /* This allows the cards to wrap to the next line if there's not enough space */
-    justify-content: center; /* Centers the cards horizontally */
-    gap: 20px; /* Space between the cards */
-    margin: 80px;
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .project-card {
-    background-color: #EF946C;
-    padding: 20px;
-    width: 500px; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    flex: 1 1 400px; /* Allows the cards to grow and shrink, with a minimum width of 300px */
-    box-sizing: border-box; /* Ensures padding doesn't affect the width */
-    max-width: 700px;
-}
-
-.project-card:hover {
-    transform: scale(1.025);
-}
-
-.project-card img {
-    border-radius: 8px;
-    max-width: 100%;
-    margin-bottom: 15px;
-}
-
-.project-card h2 {
-    font-size: 1.8em;
-    color: #270722;
-}
-
-.project-card p {
-    color: #4A5240;
-}
-
-.project-card a {
-    text-decoration: none;
-}
-
-.project-img {
-    margin-top: 15px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 
-.project-img:hover {
-    transform: scale(1.05);
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact a {
+    color: #1789fc;
+}
+
+footer {
+    background: #333745;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
