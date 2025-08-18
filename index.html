@@ -1,441 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
     <title>Chloe Atwood Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
     <!-- Header Section -->
     <header>
-      <div class="logo">Chloe Atwood</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <div class="logo">Chloe Atwood</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-<section class="hero">
-  <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
-  
-  <div class="hero-slides">
-    <div class="hero-text active">
-      <h1>Hi, I'm <span>Chloe Atwood</span></h1>
-      <p>Software Engineering Student | Undergraduate Research Assistant</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
+    <section class="hero">
+        <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
 
-    <!-- Programming Languages -->
-    <div class="hero-text">
-      <h1>Programming <span>Languages</span></h1>
-      <p>Languages I’ve worked with, arranged left to right by experience level.</p>
-        <ul class="languages">
-            <!-- Java -->
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/java.png" alt="Java Logo" width="80">
-                    <span class="tooltip">Java</span>
-                </div>
-            </li>
-             <!-- C -->
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/c.png" alt="C Logo" width="80" style="margin: 10px;">
-                    <span class="tooltip">C</span>
-                </div>
-            </li>
-             <!-- C# -->
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/c-sharp.png" alt="C Sharp Logo" width="80" style="margin: 10px;">
-                    <span class="tooltip">C#</span>
-                </div>
-            </li>
-             <!-- C++ -->
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/C-.png" alt="C++ Logo" width="80" style="margin: 10px">
-                    <span class="tooltip">C++</span>
-                </div>
-            </li>
-             <!-- HTML -->
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/html.png" alt="HTML Logo" width="80" style="margin: 10px;">
-                    <span class="tooltip">HTML</span>
-                </div>
-            </li>
-             <!-- CSS -->
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/css-3.png" alt="CSS Logo" width="80" style="margin: 10px;">
-                    <span class="tooltip">CSS</span>
-                </div>
-            </li>
-             <!-- JavaScript -->
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/js.png" alt="JavaScript Logo" width="80" style="margin: 10px;">
-                    <span class="tooltip">JavaScript</span>
-                </div>
-            </li>
-             <!-- Python-->
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/python.png" alt="Python Logo" width="80" style="margin: 10px;">
-                    <span class="tooltip">Python</span>
-                </div>
-            </li>
-        </ul>
-    </div>
+        <div class="hero-slides">
+            <div class="hero-text active">
+                <h1>Hi, I'm <span>Chloe Atwood</span></h1>
+                <p>Software Engineering Student | Undergraduate Research Assistant</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
 
-    <!-- Tools & Frameworks -->
-    <div class="hero-text">
-      <h1>Tools & <span>Frameworks</span></h1>
-      <p>An overview of my experience with tools and frameworks across version control, development, web, and database technologies.</p>
-        <ul class="languages">
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/github.png" alt="Git Hub" width="80" style="margin: 10px;">
-                    <span class="tooltip">GitHub</span>
-                </div>
-            </li>
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/gitlab.png" alt="Git Lab" width="80" style="margin: 10px;">
-                    <span class="tooltip">GitLab</span>
-                </div>
-            </li>
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/unity.png" alt="Unity" width="80" style="margin: 10px;">
-                    <span class="tooltip">Unity</span>
-                </div>
-            </li>
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/app.png" alt="Android Studio" width="80" style="margin: 10px;">
-                    <span class="tooltip">Android Studio</span>
-                </div>
-            </li>
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/structure.png" alt="React" width="80" style="margin: 10px;">
-                    <span class="tooltip">React</span>
-                </div>
-            </li>
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/nodejs.png" alt="Node.js" width="80" style="margin: 10px;">
-                    <span class="tooltip">Node.js</span>
-                </div>
-            </li>
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/leaves.png" alt="MongoDB" width="80" style="margin: 10px;">
-                    <span class="tooltip">MongoDB</span>
-                </div>
-            </li>
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/mysql.png" alt="MySQL" width="80" style="margin: 10px;">
-                    <span class="tooltip">MySQL</span>
-                </div>
-            </li>
-            <li>
-                <div class="lang-item">
-                    <img src="./Images/linux.png" alt="Linux" width="80" style="margin: 10px;">
-                    <span class="tooltip">Linux</span>
-                </div>
-            </li>
-        </ul>
-    </div>
+            <!-- Programming Languages -->
+            <div class="hero-text">
+                <h1>Programming <span>Languages</span></h1>
+                <p>Foundational coding skills across multiple languages, applied in projects ranging from coursework to
+                    personal development.</p>
+                <ul class="languages">
+                    <!-- Java -->
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/java.png" alt="Java Logo" width="80">
+                            <span class="tooltip">Java</span>
+                        </div>
+                    </li>
+                    <!-- C -->
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/c.png" alt="C Logo" width="80" style="margin: 10px;">
+                            <span class="tooltip">C</span>
+                        </div>
+                    </li>
+                    <!-- C# -->
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/c-sharp.png" alt="C Sharp Logo" width="80" style="margin: 10px;">
+                            <span class="tooltip">C#</span>
+                        </div>
+                    </li>
+                    <!-- C++ -->
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/C-.png" alt="C++ Logo" width="80" style="margin: 10px">
+                            <span class="tooltip">C++</span>
+                        </div>
+                    </li>
+                    <!-- Python-->
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/python.png" alt="Python Logo" width="80" style="margin: 10px;">
+                            <span class="tooltip">Python</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-    <div class="hero-text">
-      <h1>Additional <span>Tools</span></h1>
-      <p>Software that enhances my workflow and helps turn ideas into results.</p>
-        <ul class="languages">
-            <div class="lang-item">
-                <img src="./Images/blender_logo_kit/blender_logo_kit/square/blender_icon_128x128.png" alt="Blender" width="80" style="margin: 10px;">
-                <span class="tooltip">Blender</span>
+            <!-- Tools & Frameworks -->
+            <div class="hero-text">
+                <h1>Tools & <span>Frameworks</span></h1>
+                <p>Practical experience with tools and environments that support version control, collaboration, and
+                    efficient development.</p>
+                <ul class="languages">
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/github.png" alt="Git Hub" width="80" style="margin: 10px;">
+                            <span class="tooltip">GitHub</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/gitlab.png" alt="Git Lab" width="80" style="margin: 10px;">
+                            <span class="tooltip">GitLab</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/unity.png" alt="Unity" width="80" style="margin: 10px;">
+                            <span class="tooltip">Unity</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/app.png" alt="Android Studio" width="80" style="margin: 10px;">
+                            <span class="tooltip">Android Studio</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/linux.png" alt="Linux" width="80" style="margin: 10px;">
+                            <span class="tooltip">Linux</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="lang-item">
-                <img src="./Images/excel.png" alt="Excel Logo" width="80" style="margin: 10px;">
-                <span class="tooltip">Excel</span>
-            </div>
-            <div class="lang-item">
-                <img src="./Images/word.png" alt="Word Logo" width="80" style="margin: 10px;">
-                <span class="tooltip">Word</span>
-            </div>
-        </ul>
-    </div>
 
-    <div class="hero-text">
-      <h1>Interests & <span>Passions</span></h1>
-      <p>Some of my special interests, both in technology and beyond.</p>
-        <ul class="languages">
-            <div class="lang-item">
-                <img src="Images/Interests/xr.png" alt="Extended Reality" width="80" style="margin: 10px;">
-                <span class="tooltip">Extended Reality</span>
-            </div>
-            <div class="lang-item">
-                <img src="Images/Interests/hiking.png" alt="Hiking" width="80" style="margin: 10px;">
-                <span class="tooltip">Hiking</span>
-            </div>
-            <div class="lang-item">
-                <img src="Images/Interests/softwareDev.png" alt="Software Development" width="80" style="margin: 10px;">
-                <span class="tooltip">Software Dev</span>
-            </div>
-            <div class="lang-item">
-                <img src="Images/Interests/book.png" alt="Reading" width="80" style="margin: 10px;">
-                <span class="tooltip">Reading</span>
-            </div>
-            <div class="lang-item">
-                <img src="Images/Interests/UIUX.png" alt="UI/UX Design" width="80" style="margin: 10px;">
-                <span class="tooltip">UI/UX Design</span>
-            </div>
-            <div class="lang-item">
-                <img src="Images/Interests/controller.png" alt="Video Games" width="80" style="margin: 10px;">
-                <span class="tooltip">Video Games</span>
-            </div>
-            <div class="lang-item">
-                <img src="Images/Interests/appDev.png" alt="Application Development" width="80" style="margin: 10px;">
-                <span class="tooltip">Application Dev</span>
-            </div>
-            <div class="lang-item">
-                <img src="Images/Interests/chihuahua.png" alt="Dogs!" width="80" style="margin: 10px;">
-                <span class="tooltip">Dogs!</span>
-            </div>
-        </ul>
-
-    </div>
-  </div>
-
-  <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
-</section>
-
-<script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.hero-text');
-
-function changeSlide(direction) {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide + direction + slides.length) % slides.length;
-  slides[currentSlide].classList.add('active');
-}
-</script>
+            <!-- Web & Database Technologies -->
+            <div class="hero-text">
+                <h1>Web & <span>Database Technologies</span></h1>
+                <p>Hands-on experience creating responsive web apps and learning database integration.</p>
+                <ul class="languages">
+                    <!-- HTML -->
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/html.png" alt="HTML Logo" width="80" style="margin: 10px;">
+                            <span class="tooltip">HTML</span>
+                        </div>
+                    </li>
+                    <!-- CSS -->
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/css-3.png" alt="CSS Logo" width="80" style="margin: 10px;">
+                            <span class="tooltip">CSS</span>
+                        </div>
+                    </li>
+                    <!-- JavaScript -->
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/js.png" alt="JavaScript Logo" width="80" style="margin: 10px;">
+                            <span class="tooltip">JavaScript</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/structure.png" alt="React" width="80" style="margin: 10px;">
+                            <span class="tooltip">React</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/nodejs.png" alt="Node.js" width="80" style="margin: 10px;">
+                            <span class="tooltip">Node.js</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/leaves.png" alt="MongoDB" width="80" style="margin: 10px;">
+                            <span class="tooltip">MongoDB</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lang-item">
+                            <img src="./Images/mysql.png" alt="MySQL" width="80" style="margin: 10px;">
+                            <span class="tooltip">MySQL</span>
+                        </div>
+                    </li>
+                </ul>
 
 
+            </div>
+
+            <!-- Additional Tools -->
+            <div class="hero-text">
+                <h1>Additional <span>Tools</span></h1>
+                <p>Supporting software I use regularly for design, organization, and enhancing productivity.</p>
+                <ul class="languages">
+                    <div class="lang-item">
+                        <img src="./Images/blender_logo_kit/blender_logo_kit/square/blender_icon_128x128.png"
+                            alt="Blender" width="80" style="margin: 10px;">
+                        <span class="tooltip">Blender</span>
+                    </div>
+                    <div class="lang-item">
+                        <img src="./Images/excel.png" alt="Excel Logo" width="80" style="margin: 10px;">
+                        <span class="tooltip">Excel</span>
+                    </div>
+                    <div class="lang-item">
+                        <img src="./Images/word.png" alt="Word Logo" width="80" style="margin: 10px;">
+                        <span class="tooltip">Word</span>
+                    </div>
+                </ul>
+            </div>
+
+
+            <div class="hero-text">
+                <h1>Interests & <span>Passions</span></h1>
+                <p>Some of my special interests, both in technology and beyond.</p>
+                <ul class="languages">
+                    <div class="lang-item">
+                        <img src="Images/Interests/xr.png" alt="Extended Reality" width="80" style="margin: 10px;">
+                        <span class="tooltip">Extended Reality</span>
+                    </div>
+                    <div class="lang-item">
+                        <img src="Images/Interests/hiking.png" alt="Hiking" width="80" style="margin: 10px;">
+                        <span class="tooltip">Hiking</span>
+                    </div>
+                    <div class="lang-item">
+                        <img src="Images/Interests/softwareDev.png" alt="Software Development" width="80"
+                            style="margin: 10px;">
+                        <span class="tooltip">Software Dev</span>
+                    </div>
+                    <div class="lang-item">
+                        <img src="Images/Interests/book.png" alt="Reading" width="80" style="margin: 10px;">
+                        <span class="tooltip">Reading</span>
+                    </div>
+                    <div class="lang-item">
+                        <img src="Images/Interests/UIUX.png" alt="UI/UX Design" width="80" style="margin: 10px;">
+                        <span class="tooltip">UI/UX Design</span>
+                    </div>
+                    <div class="lang-item">
+                        <img src="Images/Interests/controller.png" alt="Video Games" width="80" style="margin: 10px;">
+                        <span class="tooltip">Video Games</span>
+                    </div>
+                    <div class="lang-item">
+                        <img src="Images/Interests/appDev.png" alt="Application Development" width="80"
+                            style="margin: 10px;">
+                        <span class="tooltip">Application Dev</span>
+                    </div>
+                    <div class="lang-item">
+                        <img src="Images/Interests/chihuahua.png" alt="Dogs!" width="80" style="margin: 10px;">
+                        <span class="tooltip">Dogs!</span>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+
+        <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-text');
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+
+    <!-- About Section -->
     <section id="about" class="about">
-      <img
-        src="./Images/me.jpeg"
-        alt="Profile Picture"
-        class="center profile-pic"
-        style="border: 5px solid #270722; margin-top: 20px"
-      />
-      <h2>About Me</h2>
-      <p>
-        I’m a Junior Software Engineering student passionate about building
-        intuitive applications and designing beautiful user experiences.
-      </p>
+        <h2>About Me</h2>
+        <hr>
+            <img src="./Images/chloea62.jpg" alt="Profile Picture" class="center profile-pic"
+        style="border: 5px solid #270722; margin-top: 20px; max-width: 800px"/>
+        <p>
+            I’m a Junior Software Engineering student passionate about building
+            intuitive applications and designing beautiful user experiences.
+        </p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-      <h2>Projects</h2>
+        <h2>Projects</h2>
+        <hr>
 
-      <!-- Mobile Applications Subsection -->
-      <div class="project-subsection" id="mobile-applications">
-        <h3>Mobile Applications</h3>
-        <div class="project-grid">
-          <div class="project-card">
-            <div class="video-wrapper">
-              <video controls>
-                <source src="Videos/newChatNRate.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+        <!-- Mobile Applications Subsection -->
+        <div class="project-subsection" id="mobile-applications">
+            <h3>Mobile Applications</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="Videos/newChatNRate.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h4>Chat n Rate</h4>
+                    <p>
+                        As part of a team of four, I helped develop Chat n Rate, a mobile
+                        app built with Android Studio and Spring Boot that lets users
+                        review movies, video games, and books. The app includes real-time
+                        chat with friends, the ability to write reviews, leave comments,
+                        and like posts. Users can sort and filter reviews, and live
+                        updates keep the feed fresh and engaging. This project highlights
+                        collaborative full-stack mobile development with real-time
+                        features and backend integration.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <img src="./Images/Cheese.png" alt="Cheese" class="project-img" />
+                    <h4>AR Mobile Mini Game</h4>
+                    <p>
+                        A mobile version of the last game that is played in Augmented
+                        Reality. It was created in Unity and utilizes Vuforia. All the
+                        same rules apply in this app as in the previous version except you
+                        must play it on your phone. Once you load up the app you must scan
+                        an image target after putting it on the floor in order to spawn
+                        the room so you can play. You must the use your phone as your eyes
+                        in the game to look around. Moving is done by controller buttons
+                        on the screen although you may also attempt to walk about in the
+                        real world, the game will just be a lot harder that way. Be
+                        careful, this game may sound fun but it is a lot more difficult in
+                        this version than the last.
+                    </p>
+                </div>
             </div>
-            <h4>Chat n Rate</h4>
-            <p>
-              As part of a team of four, I helped develop Chat n Rate, a mobile
-              app built with Android Studio and Spring Boot that lets users
-              review movies, video games, and books. The app includes real-time
-              chat with friends, the ability to write reviews, leave comments,
-              and like posts. Users can sort and filter reviews, and live
-              updates keep the feed fresh and engaging. This project highlights
-              collaborative full-stack mobile development with real-time
-              features and backend integration.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <img src="./Images/Cheese.png" alt="Cheese" class="project-img" />
-            <h4>AR Mobile Mini Game</h4>
-            <p>
-              A mobile version of the last game that is played in Augmented
-              Reality. It was created in Unity and utilizes Vuforia. All the
-              same rules apply in this app as in the previous version except you
-              must play it on your phone. Once you load up the app you must scan
-              an image target after putting it on the floor in order to spawn
-              the room so you can play. You must the use your phone as your eyes
-              in the game to look around. Moving is done by controller buttons
-              on the screen although you may also attempt to walk about in the
-              real world, the game will just be a lot harder that way. Be
-              careful, this game may sound fun but it is a lot more difficult in
-              this version than the last.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Game Development Subsection --> 
-       <div class="project-subsection" id="game-development"> 
-        <h3>Game Development</h3> 
-        <div class="project-grid"> 
-            <div class="project-card"> 
-                <a href="https://github.com/chloeatwood/DungeonGame"> 
-                    <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img"> 
-                </a>
-                <h4>Dungeon Crawler</h4> 
-                <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated dungeons, 
-                    intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command line. 
-                    A custom min-heap event system manages turn-based gameplay, showcasing object-oriented design and 
-                    low-level programming. To see how to play it click on the image!
-                </p> 
-            </div>
-                <div class="project-card"> 
-                    <img src="./Images/LivingRoom.png" alt="Living Room Map Image For Game" class="project-img"> 
-                    <h4>Unity Mini Game</h4> 
-                    <p>A game I developed so I could learn Unity. The image is the base of the room you spawn in. 
-                        Everything in the image was created by me in blender. In this game you play as a mouse and 
-                        need to run around the living room and find all of the cheese before the time runs out. 
-                        In order to collect all the cheese you must first find the cheese that allows you to jump 
-                        so you can do a little bit of parkour. Be careful as you can only jump high enough to do the 
-                        parkour for a limited amount of time before you will have to go collect the cheese again. 
-                        There is one special piece of cheese that must be collected although you might want to save 
-                        it for last because if you collect it and do not have enough of the other cheese it will 
-                        respawn. 
-                    </p> 
-                </div> 
-            </div> 
         </div>
 
+        <!-- Game Development Subsection -->
+        <div class="project-subsection" id="game-development">
+            <h3>Game Development</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <a href="https://github.com/chloeatwood/DungeonGame">
+                        <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img">
+                    </a>
+                    <h4>Dungeon Crawler</h4>
+                    <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated
+                        dungeons,
+                        intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command
+                        line.
+                        A custom min-heap event system manages turn-based gameplay, showcasing object-oriented design
+                        and
+                        low-level programming. To see how to play it click on the image!
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="./Images/LivingRoom.png" alt="Living Room Map Image For Game" class="project-img">
+                    <h4>Unity Mini Game</h4>
+                    <p>A game I developed so I could learn Unity. The image is the base of the room you spawn in.
+                        Everything in the image was created by me in blender. In this game you play as a mouse and
+                        need to run around the living room and find all of the cheese before the time runs out.
+                        In order to collect all the cheese you must first find the cheese that allows you to jump
+                        so you can do a little bit of parkour. Be careful as you can only jump high enough to do the
+                        parkour for a limited amount of time before you will have to go collect the cheese again.
+                        There is one special piece of cheese that must be collected although you might want to save
+                        it for last because if you collect it and do not have enough of the other cheese it will
+                        respawn.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-            <!-- Web Development Subsection --> 
-             <div class="project-subsection" id="web-development"> 
-                <h3>Web Development</h3> 
-                <div class="project-grid"> 
-                    <div class="project-card"> 
+
+        <!-- Web Development Subsection -->
+        <div class="project-subsection" id="web-development">
+            <h3>Web Development</h3>
+            <div class="project-grid">
+                <div class="project-card">
                     <video controls>
                         <source src="Videos/newMealPrepStore.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                        <h4>Digital Recipe Box</h4> 
-                        <p>React & Node.js app for managing meal prep recipes.</p> 
-                    </div> 
-                    <div class="project-card"> 
-                        <img src="project3.jpg" alt="Web Development Projects" /> 
-                        <h4>Movie Website project thing</h4> 
-                        <p>Web Dev Stuff</p> 
-                    </div> 
-                    <div class="project-card"> 
-                        <a href="https://github.com/chloeatwood/Portfolio">
-                            <img src="./Images/WebDeve.jpg" alt="Web Development" class="project-img">
-                        </a>
-                        <h4>Portfolio</h4> 
-                        <p>This is the portfolio site you’re currently viewing, built with HTML, CSS, and JavaScript. 
-                            It was recently redesigned with Bootstrap for a cleaner layout, improved responsiveness, 
-                            and a better user experience.</p> 
-                    </div> 
-                    <div class="project-card"> 
-                        <img src="project3.jpg" alt="Web Development Projects" /> 
-                        <h4>Misc?</h4> 
-                        <p>Web Dev Stuff</p> 
-                    </div> 
-                </div> 
-            </div> 
-            <div class="project-subsection" id="utilities-tools"> 
-                <h3>Utilities & Tools</h3> 
-                <div class="project-grid"> 
-                    <div class="project-card"> 
-                    <a href="https://github.com/chloeatwood/WordSearchGenerator">
-                        <img src="./Images/Search.png" alt="Word Search Generator"  class="project-img">
+                    <h4>Digital Recipe Box</h4>
+                    <p>React & Node.js app for managing meal prep recipes.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="Web Development Projects" />
+                    <h4>Movie Website project thing</h4>
+                    <p>Web Dev Stuff</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/chloeatwood/Portfolio">
+                        <img src="./Images/WebDeve.jpg" alt="Web Development" class="project-img">
                     </a>
-                        <h4>Word Search Generator</h4> 
-                        <p>This project involved creating a Word Search Generator in C. It is used in a terminal.
-                            In order to run it you must navigate to the folder location inside your terminal and type:
-                            <br>make WordSearchGenerator <br> After that you may use it to create a square word search. To do this 
-                            type ./WordSearchGenerator 'Number of rows/columns you want' 'As many words as you want'. An example 
-                            of this would be to type: <br> ./WordSearchGenerator 20 Books Chloe WebDevelopment Software Engineer</p> 
-                    </div> 
-                </div> 
+                    <h4>Portfolio</h4>
+                    <p>This is the portfolio site you’re currently viewing, built with HTML, CSS, and JavaScript.
+                        It was recently redesigned with Bootstrap for a cleaner layout, improved responsiveness,
+                        and a better user experience.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="Web Development Projects" />
+                    <h4>Misc?</h4>
+                    <p>Web Dev Stuff</p>
+                </div>
             </div>
+        </div>
+        <div class="project-subsection" id="utilities-tools">
+            <h3>Utilities & Tools</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <a href="https://github.com/chloeatwood/WordSearchGenerator">
+                        <img src="./Images/Search.png" alt="Word Search Generator" class="project-img">
+                    </a>
+                    <h4>Word Search Generator</h4>
+                    <p>This project involved creating a Word Search Generator in C. It is used in a terminal.
+                        In order to run it you must navigate to the folder location inside your terminal and type:
+                        <br>make WordSearchGenerator <br> After that you may use it to create a square word search. To
+                        do this
+                        type ./WordSearchGenerator 'Number of rows/columns you want' 'As many words as you want'. An
+                        example
+                        of this would be to type: <br> ./WordSearchGenerator 20 Books Chloe WebDevelopment Software
+                        Engineer
+                    </p>
+                </div>
+            </div>
+        </div>
 
-            <!-- Modeling and Visualization Subsection --> 
-             <div class="project-subsection" id="modeling-visualization"> 
-                <h3>Modeling and Visualization</h3> 
-                <div class="project-grid"> 
-                    <div class="project-card"> 
-                        <img src="Images/ScFiImage.png" alt="Blender Creations" /> 
-                        <h4>Blender Creations</h4> 
-                        <p>I created and rendered this image using Blender as part of my journey into 3D design. 
-                            Learning Blender has been both fun and rewarding, and I enjoy experimenting with new techniques.</p> 
-                    </div> 
-                    <div class="project-card"> 
-                        <img src="Videos/Astronaut.gif" alt="Astronaut gif" /> 
-                        <h4>Web Art</h4> 
-                        <p>Built interactive, visually striking pieces entirely with HTML and CSS. 
-                            No images required. Used gradients, animations, and creative shapes to 
-                            turn simple code into unique, responsive art that works on any screen size.
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="project-card"> 
-                    <video controls>
-                        <source src="Videos/newMandelbrot.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <h4>Mandelbrot Explorer</h4> 
-                    <p>An interactive Mandelbrot fractal explorer built in C++ with ncurses. 
-                        The program renders fractals directly in the terminal using ASCII characters and dynamic color gradients. 
-                        Users can zoom in, pan around, and explore the infinite detail of the Mandelbrot all from a command-line interface.</p> 
-                </div> 
-            </div> 
-        </div> 
+        <!-- Modeling and Visualization Subsection -->
+        <div class="project-subsection" id="modeling-visualization">
+            <h3>Modeling and Visualization</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="Images/ScFiImage.png" alt="Blender Creations" />
+                    <h4>Blender Creations</h4>
+                    <p>I created and rendered this image using Blender as part of my journey into 3D design.
+                        Learning Blender has been both fun and rewarding, and I enjoy experimenting with new techniques.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="Videos/Astronaut.gif" alt="Astronaut gif" />
+                    <h4>Web Art</h4>
+                    <p>Built interactive, visually striking pieces entirely with HTML and CSS.
+                        No images required. Used gradients, animations, and creative shapes to
+                        turn simple code into unique, responsive art that works on any screen size.
+                    </p>
+                </div>
+            </div>
+            <div class="project-card">
+                <video controls>
+                    <source src="Videos/newMandelbrot.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <h4>Mandelbrot Explorer</h4>
+                <p>An interactive Mandelbrot fractal explorer built in C++ with ncurses.
+                    The program renders fractals directly in the terminal using ASCII characters and dynamic color
+                    gradients.
+                    Users can zoom in, pan around, and explore the infinite detail of the Mandelbrot all from a
+                    command-line interface.</p>
+            </div>
+        </div>
+        </div>
 
     </section>
 
-    <section id="contact" class="contact"> 
-        <h2>Contact</h2> 
-        <p> Email: 
-            <a href="mailto:catwood0419@gmail.com">catwood0419@gmail.com</a> 
-        </p> 
-        <p> LinkedIn: 
-            <a href="https://www.linkedin.com/in/chloe-atwood-b4b3882b2/" target="_blank" >Profile</a > 
-        </p> 
-        <p> GitHub: 
-            <a href="https://github.com/chloeatwood" target="_blank">Projects</a> 
-        </p> 
-    </section> 
-    <footer> 
-        <p>&copy; 2025 Chloe Atwood. All rights reserved.</p> 
-    </footer> 
-    <script> 
-    // Colors for the card backgrounds 
-    const colors = ["#5C5C99", "#748b75", "#cc3363"]; 
-    //Get all the project cards 
-    const cards = document.querySelectorAll(".project-card"); 
-    // // Function to assign random background color 
-    cards.forEach((card) => { const randomColor = colors[Math.floor(Math.random() * colors.length)]; 
-    card.style.backgroundColor = randomColor; 
-    }); 
-    </script> 
-    </body>
-  </body>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <hr>
+        <p> Email:
+            <a href="mailto:catwood0419@gmail.com">catwood0419@gmail.com</a>
+        </p>
+        <p> LinkedIn:
+            <a href="https://www.linkedin.com/in/chloe-atwood-b4b3882b2/" target="_blank">Profile</a>
+        </p>
+        <p> GitHub:
+            <a href="https://github.com/chloeatwood" target="_blank">Projects</a>
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Chloe Atwood. All rights reserved.</p>
+    </footer>
+    <script>
+        // Colors for the card backgrounds 
+        const colors = ["#5C5C99", "#748b75", "#cc3363"];
+        //Get all the project cards 
+        const cards = document.querySelectorAll(".project-card");
+        // // Function to assign random background color 
+        cards.forEach((card) => {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            card.style.backgroundColor = randomColor;
+        }); 
+    </script>
+</body>
+</body>
+
 </html>

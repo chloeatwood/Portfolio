@@ -133,9 +133,14 @@ header nav a:hover {
   margin-top: 2rem;
 }
 
+.project-subsection h3{
+  color: #cc3363;
+  margin-top: 30px;
+}
+
 .project-card {
   background-color: #EF946C;
-  padding: 20px;
+  padding: 30px;
   width: 100%;
   max-width: 700px;
   min-width: 200px;
@@ -145,14 +150,18 @@ header nav a:hover {
   box-sizing: border-box;
   margin: 0 auto; /* center the card if container is wider */
   transition: transform 0.3s ease;
+  margin-bottom: 30px;
 }
 
+hr {
+  margin: 30px;
+}
 
 .project-card video {
   max-width: 100%;
   height: auto;
-  border-radius: 8px; /* optional, for rounded corners */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* optional, for style */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   display: block;
   margin: 0 auto; /* centers the video */
   max-width: 800;
@@ -246,6 +255,15 @@ footer {
 .lang-item:hover .tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #e3daff;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 
