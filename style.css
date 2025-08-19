@@ -167,6 +167,12 @@ hr {
   max-width: 800;
 }
 
+h4 {
+  color: #e3daff;
+  font-weight: 1em;
+  font-size: 1.5em;
+}
+
 .project-card img {
     border-radius: 8px;
     max-width: 100%;
