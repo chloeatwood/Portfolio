@@ -11,13 +11,23 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
     });
 });
 
-// Function to dynamically update the project description when hovering over project images
-function updateDescription(project) {
-    const description = document.querySelector('.project-description');
-    switch (project) {
-        case 'Word Search Generator':
-            description.innerHTML = "This project involved creating a Word Search Generator in C. It is used in a terminal. To run it, navigate to the folder and type: <br>make WordSearchGenerator";
-            break;
-        // Add cases for other projects if desired
-    }
+
+// Hero slide functionality
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-text');
+
+function changeSlide(direction) {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
 }
+
+// Random background colors for project cards
+const colors = ["#5C5C99", "#669988", "#BC8CA6"];
+const cards = document.querySelectorAll(".project-card, .attribute-card, .contact-card");
+
+cards.forEach((card) => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    card.style.backgroundColor = randomColor;
+});
+

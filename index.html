@@ -17,6 +17,7 @@
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <a href="attributes.html">Attributes</a>
         </nav>
     </header>
 
@@ -237,28 +238,19 @@
         <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
     </section>
 
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.hero-text');
-
-        function changeSlide(direction) {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-    </script>
 
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About Me</h2>
         <hr>
-            <img src="./Images/chloea62.jpg" alt="Profile Picture" class="center profile-pic"
-        style="border: 5px solid #748b75; margin-top: 20px; max-width: 800px"/>
+        <img src="./Images/chloea62.jpg" alt="Profile Picture" class="center profile-pic"
+            style="border: 5px solid #748b75; margin-top: 20px; max-width: 800px" />
         <p>
-        I’m a Junior Software Engineering student who loves creating applications that are both functional and easy to use. 
-        I enjoy exploring different technologies and finding creative ways to solve problems. 
-        When I’m not coding, I like experimenting with interactive media, design projects, and learning new
-         tools that help me bring ideas to life.
+            I’m a Junior Software Engineering student who loves creating applications that are both functional and easy
+            to use.
+            I enjoy exploring different technologies and finding creative ways to solve problems.
+            When I’m not coding, I like experimenting with interactive media, design projects, and learning new
+            tools that help me bring ideas to life.
         </p>
     </section>
 
@@ -362,8 +354,10 @@
                         Your browser does not support the video tag.
                     </video>
                     <h4>Digital Recipe Box</h4>
-                    <p>Created a recipe management platform using React and Node.js. Features include user account creation, 
-                        recipe search and sorting, purchasing, and review submission. Admins can add, edit, or remove recipes 
+                    <p>Created a recipe management platform using React and Node.js. Features include user account
+                        creation,
+                        recipe search and sorting, purchasing, and review submission. Admins can add, edit, or remove
+                        recipes
                         for public viewing.</p>
                 </div>
                 <div class="project-card">
@@ -381,12 +375,16 @@
                         Your browser does not support the video tag.
                     </video>
                     <h4>Movie Review Website</h4>
-                    <p>Built a web application that organizes movies by genre from a JSON dataset. Users can search for movies, 
-                        rate them with a star system, and leave comments, while also seeing ratings and reviews from other users.</p>
+                    <p>Built a web application that organizes movies by genre from a JSON dataset. Users can search for
+                        movies,
+                        rate them with a star system, and leave comments, while also seeing ratings and reviews from
+                        other users.</p>
                 </div>
 
             </div>
         </div>
+
+        <!-- Utilitiess and Toolss
         <div class="project-subsection" id="utilities-tools">
             <h3>Utilities & Tools</h3>
             <div class="project-grid">
@@ -406,7 +404,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Modeling and Visualization Subsection -->
         <div class="project-subsection" id="modeling-visualization">
@@ -431,18 +429,33 @@
                         turn simple code into unique, responsive art that works on any screen size.
                     </p>
                 </div>
-            </div>
-            <div class="project-card">
-                <video controls>
-                    <source src="Videos/newMandelbrot.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                <h4>Mandelbrot Explorer</h4>
-                <p>An interactive Mandelbrot fractal explorer built in C++ with ncurses.
-                    The program renders fractals directly in the terminal using ASCII characters and dynamic color
-                    gradients.
-                    Users can zoom in, pan around, and explore the infinite detail of the Mandelbrot all from a
-                    command-line interface.</p>
+                <div class="project-card">
+                    <video controls>
+                        <source src="Videos/newMandelbrot.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <h4>Mandelbrot Explorer</h4>
+                    <p>An interactive Mandelbrot fractal explorer built in C++ with ncurses.
+                        The program renders fractals directly in the terminal using ASCII characters and dynamic color
+                        gradients.
+                        Users can zoom in, pan around, and explore the infinite detail of the Mandelbrot all from a
+                        command-line interface.</p>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend">
+                        <img src="Images/coverImage.png" alt="Ray Tracing In One Weekend" />
+                    </a>
+                    <h4>Basic Ray Tracer</h4>
+                    <p>Implemented a simple ray tracer in C++ following Peter Shirley’s <em>Ray Tracing in One
+                            Weekend</em>.
+                        I completed this project to learn foundational ray tracing concepts for a rendering engine I am
+                        currently developing.
+                        The program renders 3D scenes with ray-object intersections, reflections, and shading, helping
+                        me build skills for more
+                        advanced graphics programming.
+                    </p>
+                </div>
             </div>
         </div>
         </div>
@@ -450,32 +463,46 @@
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact</h2>
+        <h2>Contact Me</h2>
         <hr>
-        <p> Email:
-            <a href="mailto:catwood0419@gmail.com">catwood0419@gmail.com</a>
-        </p>
-        <p> LinkedIn:
-            <a href="https://www.linkedin.com/in/chloe-atwood-b4b3882b2/" target="_blank">Profile</a>
-        </p>
-        <p> GitHub:
-            <a href="https://github.com/chloeatwood" target="_blank">Projects</a>
-        </p>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h4>Email</h4>
+                <br>
+                <img src="Images/message.png" alt="Email Icon" class="contact-icon">
+                <br>
+                <a href="mailto:catwood0419@gmail.com">catwood0419@gmail.com</a>
+                <br>
+                <a href="mailto:catwood8@iastate.edu.com">catwood8@iastate.edu</a>
+            </div>
+            <div class="contact-card">
+                <h4>LinkedIn</h4>
+                <br>
+                <div>
+                <a href="https://www.linkedin.com/in/chloe-atwood-b4b3882b2/">
+                    <img src="Images/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
+                </a>  
+                <p><em>Select Image to View Page</em></p>
+                </div>
+            </div>
+            <div class="contact-card">
+                <h4>GitHub</h4>
+                <br>
+                <a href="https://github.com/chloeatwood">
+                    <img src="Images/github.png" alt="GitHub Icon" class="contact-icon">
+                </a>
+                <p><em>Select Image to View Page</em></p>
+            </div>
+        </div>
     </section>
+
+
     <footer>
         <p>&copy; 2025 Chloe Atwood. All rights reserved.</p>
     </footer>
-    <script>
-        // Colors for the card backgrounds 
-        const colors = ["#5C5C99", "#748b75", "#cc3363"];
-        //Get all the project cards 
-        const cards = document.querySelectorAll(".project-card");
-        // // Function to assign random background color 
-        cards.forEach((card) => {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            card.style.backgroundColor = randomColor;
-        }); 
-    </script>
+
+    <script src="script.js"></script>
+
 </body>
 </body>
 

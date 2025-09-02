@@ -126,24 +126,21 @@ header nav a:hover {
   text-align: center;
 }
 
-.projects .project-grid {
+.projects .project-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
 .project-subsection h3{
-  color: #cc3363;
+  color: #7FB8E8;
   margin-top: 30px;
 }
 
 .project-card {
   background-color: #EF946C;
   padding: 30px;
-  width: 100%;
-  max-width: 700px;
-  min-width: 200px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -164,27 +161,29 @@ hr {
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   display: block;
   margin: 0 auto; /* centers the video */
-  max-width: 800;
+  max-width: 100%;
+}
+
+.project-card img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: block;
 }
 
 h4 {
   color: #e3daff;
   font-weight: 1em;
   font-size: 1.5em;
+  margin: 15px;
 }
 
-.project-card img {
-    border-radius: 8px;
-    max-width: 100%;
-    margin-bottom: 15px;
-}
+
 
 .project-card:hover {
   transform: translateY(-5px);
-}
-
-.contact a {
-  color: #1789fc;
 }
 
 footer {
@@ -271,6 +270,96 @@ h2 {
 h3 {
   font-size: 2em;
 }
+
+.attributes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.attribute-card {
+  background-color: #5C5C99;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.attribute-card:hover {
+  transform: translateY(-5px);
+}
+
+.attribute-card a {
+  color: #e3daff;
+  text-decoration: none;
+}
+
+.attribute-card a:hover {
+  color: #87f5fb;
+}
+
+.attribute-icon {
+  max-width: 80px;
+  margin-bottom: 1rem;
+}
+
+/* Contact Card Styling Section */
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.contact-card {
+  background-color: #5C5C99;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-grid .contact-card {
+  /* grid-template-columns: repeat(auto-fit, minmax(10vw, 10vw)); */
+  width: 35%;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.contact-icon {
+  width: 20vw;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.contact-card h4 {
+  font-size: 1.75rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contact-card a {
+  color: #e3daff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+  color: #87f5fb;
+}
+
+.contact-card p {
+  font-size: .75rem;
+}
+
 
 
 
