@@ -52,9 +52,10 @@ header nav a:hover {
   text-align: center;
   color: white;
   background-image: url("Images/BackgroundImages/FrontPageBackgroun.jpg");
-  background-size: cover; /* makes the image cover the entire area */
-  background-position: center; /* centers the image */
-  background-repeat: no-repeat; /* prevents tiling */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem; /* Add padding for mobile spacing */
 }
 
 .arrow {
@@ -66,6 +67,8 @@ header nav a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10; /* Ensure arrows stay on top */
+  padding: 0.5rem; /* Make arrows easier to tap */
 }
 
 .arrow.left {
@@ -83,15 +86,18 @@ header nav a:hover {
 .hero-text {
   display: none;
   transition: opacity 0.5s ease;
+  padding: 0 1rem; /* Add horizontal padding */
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 5vw, 3rem); /* Responsive font size */
+  margin-bottom: 1rem;
 }
 
 .hero-slides {
   position: relative;
-  width: 80%;
+  width: 90%; /* Increase width on smaller screens */
+  max-width: 800px; /* Set maximum width */
   text-align: center;
 }
 
@@ -100,8 +106,135 @@ header nav a:hover {
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
   margin: 1rem 0;
+  line-height: 1.5;
+}
+
+/* Language/skill icons container */
+.languages {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Individual language/skill items */
+.lang-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+/* Make icons responsive */
+.lang-item img {
+  width: clamp(50px, 10vw, 80px) !important; /* Override inline styles */
+  height: auto;
+  margin: 0.5rem !important;
+  transition: transform 0.3s ease;
+}
+
+.lang-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Tooltip styling */
+.tooltip {
+  position: absolute;
+  bottom: -25px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.lang-item:hover .tooltip {
+  opacity: 1;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #5C5C99;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #4a4a7a;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh; /* Full height on mobile */
+    padding: 1rem 0.5rem;
+  }
+  
+  .hero-slides {
+    width: 95%;
+  }
+  
+  .arrow {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .arrow.left {
+    left: 5px;
+  }
+  
+  .arrow.right {
+    right: 5px;
+  }
+  
+  .languages {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .lang-item {
+    margin: 0.25rem;
+  }
+  
+  .lang-item img {
+    width: clamp(40px, 12vw, 60px) !important;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .hero-text {
+    padding: 0 0.5rem;
+  }
+  
+  .languages {
+    gap: 0.25rem;
+  }
+  
+  .lang-item img {
+    width: clamp(35px, 15vw, 50px) !important;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
 }
 
 .btn {
@@ -311,6 +444,7 @@ h3 {
   justify-content: center;
   gap: 30px;
   margin-top: 30px;
+  padding: 0 1rem;
 }
 
 .contact-card {
@@ -320,11 +454,9 @@ h3 {
   text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.contact-grid .contact-card {
-  /* grid-template-columns: repeat(auto-fit, minmax(10vw, 10vw)); */
-  width: 35%;
+  flex: 1 1 300px; /* Flexible sizing with minimum width */
+  max-width: 400px; /* Maximum width to prevent oversized cards */
+  min-width: 250px; 
 }
 
 .contact-card:hover {
@@ -333,13 +465,13 @@ h3 {
 }
 
 .contact-icon {
-  width: 20vw;
+  width: clamp(60px, 15vw, 120px); /* Responsive icon size */
   height: auto;
   margin-bottom: 15px;
 }
 
 .contact-card h4 {
-  font-size: 1.75rem;
+  font-size: clamp(1.2rem, 4vw, 1.75rem); /* Responsive heading */
   color: white;
   margin-bottom: 10px;
 }
@@ -348,7 +480,7 @@ h3 {
   color: #e3daff;
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive link text */
 }
 
 .contact-card a:hover {
@@ -357,9 +489,32 @@ h3 {
 }
 
 .contact-card p {
-  font-size: .75rem;
+  font-size: clamp(0.65rem, 1.5vw, 0.75rem); /* Responsive paragraph */
 }
 
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .contact-grid {
+    gap: 20px;
+    padding: 0 0.5rem;
+  }
+  
+  .contact-card {
+    padding: 25px 15px;
+    min-width: 280px; /* Slightly wider minimum on mobile cuz it looked soo small*/
+    max-width: 350px;
+  }
+}
 
-
-
+/* Very small screens */
+@media (max-width: 480px) {
+  .contact-grid {
+    gap: 15px;
+  }
+  
+  .contact-card {
+    padding: 20px 15px;
+    min-width: 250px;
+    max-width: 320px;
+  }
+}
