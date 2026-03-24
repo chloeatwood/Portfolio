@@ -518,3 +518,64 @@ h3 {
     max-width: 320px;
   }
 }
+
+
+/* Meta text (location + dates) */
+.project-card .meta {
+  text-align: left;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+/* Tasks header */
+.tasks-title {
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: #e3daff;
+}
+
+/* Main bullet list */
+.tasks-list {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+/* Main bullets */
+.tasks-list > li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Custom bullet style */
+.tasks-list > li::marker {
+  color: white;
+}
+
+/* Nested links list */
+.sub-links {
+  margin-top: 6px;
+  padding-left: 18px;
+}
+
+/* Nested items */
+.sub-links li {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+/* Links styling */
+.sub-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sub-links a:hover {
+  text-decoration: underline;
+  color: #333745;
+}
