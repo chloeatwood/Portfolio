@@ -305,9 +305,9 @@
         <hr>
         <p>Click on any of the images below to be taken directly to the GitHub page for the project!</p>
 
-        <!-- OSCAR Section -->
-        <div class="project-subsection" id="mobile-applications">
-            <h3>Open Source Copter for Academic Research</h3>
+        <!-- Featured Projects Section -->
+        <div class="project-subsection" id="featured-projects">
+            <h3>Featured Projects</h3>
             <div class="project-grid">
                 <div class="project-card">
                     <div class="video-wrapper">
@@ -316,20 +316,35 @@
                             Your browser does not support the video tag.
                         </video> -->
                     </div>
-                    <h4>OSCAR</h4>
-                    <p>
-                        Senior design project - talk about USB communication setup with FW and Desktop Application.
-                        Mention CRC protocol, packet handling/setup, etc. Also mention Electron, communicated with C module,
-                        Desktop application development, UI development, cross disceplenary
+                    <h4>OSCAR - Open Source Copter for Academic Research</h4>
+                    <p class="tasks-title"> Developed a cross-platform desktop application and communication layer for an open-source 
+                        quadcopter system, enabling reliable data exchange between firmware and a user-facing interface. </p>
+
+                    <ul class="tasks-list">
+                        <li>Designed and implemented a custom USB communication protocol between embedded firmware and a desktop application </li> 
+                        <li>Built packet parsing and serialization logic in C, including CRC-based error detection and validation </li>
+                        <li>Integrated low-level C communication module with an Electron-based UI for real-time monitoring and control </li>
+                        <li>Debugged timing, synchronization, and data integrity issues across hardware and software boundaries </li>
+                        <li>Collaborated on a multidisciplinary team involving software, electrical, and computer engineering components</li>
+                    </ul>
+
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend">
+                        <img src="Images/NightfallsHerald.png" alt="Ray Tracing In One Weekend" />
+                    </a>
+                    <h4>Ray Tracer</h4>
+                    <p>This project originated from Peter Shirley’s <em>Ray Tracing in One Weekend</em> framework and 
+                        was extended into a more advanced physically based rendering implementation. Additions 
+                        include support for image and file based texture loading, OBJ mesh parsing, volumetric 
+                        scattering and absorption, high-dynamic-range environment maps, procedural Perlin noise textures, 
+                        cube maps, lighting, and multi-threaded parallelization for improved render performance. 
+                        For a full breakdown of implemented features, click the image to view the project’s Git repository.
                     </p>
                 </div>
-            </div>
-        </div>
 
-        <!-- Mobile Applications Subsection -->
-        <div class="project-subsection" id="mobile-applications">
-            <h3>Mobile Applications</h3>
-            <div class="project-grid">
+
                 <div class="project-card">
                     <div class="video-wrapper">
                         <video controls>
@@ -350,6 +365,82 @@
                     </p>
                 </div>
 
+
+                <div class="project-card">
+                    <a href="https://github.com/chloeatwood/DungeonGame">
+                        <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img">
+                    </a>
+                    <h4>Dungeon Crawler</h4>
+                    <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated
+                        dungeons,
+                        intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command
+                        line.
+                        A custom min-heap event system manages turn-based gameplay, showcasing object-oriented design
+                        and
+                        low-level programming. To see how to play it click on the image!
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!-- Systems, Networking and Data Communication Section -->
+        <div class="project-subsection" id="systems-networking">
+            <h3>Systems, Networking, and Data Communication</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <!-- <video controls>
+                        <source src="Videos/newMealPrepStore.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video> -->
+                    <h4>Basic Client-Server TCP Communication</h4>
+                    <p>Need to come up with a better name.</p>
+                </div>
+                <div class="project-card">
+                    <!-- <a href="https://github.com/chloeatwood/Portfolio">
+                        <img src="./Images/WebDeve.jpg" alt="Web Development" class="project-img">
+                    </a> -->
+                    <h4>Bash Terminal</h4>
+                    <p>Mention built in commands, rerouting commandings, piping, and input/output file stuff</p>
+                </div>
+                <div class="project-card">
+                    <!-- <video controls>
+                        <source src="Videos/newMovie.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video> -->
+                    <h4>ARQ Protocol Handling</h4>
+                    <p>Implemented a custom ARQ protocol with CRC-based error detection.
+                        Simulated packet loss and corruption to test reliability and recovery mechanisms.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Applications & Game Development Subsection -->
+        <div class="project-subsection" id="mobile-applications">
+            <h3>Applications & Game Development</h3>
+            <div class="project-grid">
+                <!-- Chat N Rate -->
+                <div class="project-card">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="Videos/newChatNRate.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h4>Chat n Rate</h4>
+                    <p>
+                        As part of a team of four, I helped develop Chat n Rate, a mobile
+                        app built with Android Studio and Spring Boot that lets users
+                        review movies, video games, and books. The app includes real-time
+                        chat with friends, the ability to write reviews, leave comments,
+                        and like posts. Users can sort and filter reviews, and live
+                        updates keep the feed fresh and engaging. This project highlights
+                        collaborative full-stack mobile development with real-time
+                        features and backend integration.
+                    </p>
+                </div>
+                <!-- AR Mini Mobile Game -->
                 <div class="project-card">
                     <a href="https://github.com/chloeatwood/UnityAR-Practice">
                         <img src="./Images/Cheese.png" alt="Cheese" class="project-img" />
@@ -369,27 +460,7 @@
                         this version than the last.
                     </p>
                 </div>
-            </div>
-        </div>
-
-        <!-- Game Development Subsection -->
-        <div class="project-subsection" id="game-development">
-            <h3>Game Development</h3>
-            <div class="project-grid">
-                <div class="project-card">
-                    <a href="https://github.com/chloeatwood/DungeonGame">
-                        <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img">
-                    </a>
-                    <h4>Dungeon Crawler</h4>
-                    <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated
-                        dungeons,
-                        intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command
-                        line.
-                        A custom min-heap event system manages turn-based gameplay, showcasing object-oriented design
-                        and
-                        low-level programming. To see how to play it click on the image!
-                    </p>
-                </div>
+                <!-- Unity Mini Game -->
                 <div class="project-card">
                     <a href="https://github.com/chloeatwood/UnityPractice">
                         <img src="./Images/LivingRoom.png" alt="Living Room Map Image For Game" class="project-img">
@@ -404,6 +475,21 @@
                         There is one special piece of cheese that must be collected although you might want to save
                         it for last because if you collect it and do not have enough of the other cheese it will
                         respawn.
+                    </p>
+                </div>
+                <!-- Dungeon Crawler -->
+                <div class="project-card">
+                    <a href="https://github.com/chloeatwood/DungeonGame">
+                        <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img">
+                    </a>
+                    <h4>Dungeon Crawler</h4>
+                    <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated
+                        dungeons,
+                        intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command
+                        line.
+                        A custom min-heap event system manages turn-based gameplay, showcasing object-oriented design
+                        and
+                        low-level programming. To see how to play it click on the image!
                     </p>
                 </div>
             </div>
@@ -523,39 +609,7 @@
                 </div>
             </div>
         </div>
-        </div>
-
-
-
-        <!-- Systems, Networking and Data Communication Section -->
-        <div class="project-subsection" id="web-development">
-            <h3>Systems, Networking, and Data Communication</h3>
-            <div class="project-grid">
-                <div class="project-card">
-                    <!-- <video controls>
-                        <source src="Videos/newMealPrepStore.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video> -->
-                    <h4>Basic Client-Server TCP Communication</h4>
-                    <p>Need to come up with a better name.</p>
-                </div>
-                <div class="project-card">
-                    <!-- <a href="https://github.com/chloeatwood/Portfolio">
-                        <img src="./Images/WebDeve.jpg" alt="Web Development" class="project-img">
-                    </a> -->
-                    <h4>Bash Terminal</h4>
-                    <p>Mention built in commands, rerouting commandings, piping, and input/output file stuff</p>
-                </div>
-                <div class="project-card">
-                    <!-- <video controls>
-                        <source src="Videos/newMovie.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video> -->
-                    <h4>ARQ Protocol Handling</h4>
-                    <p>Talk about implementing CRC, introducing errorings, handling errors</p>
-                </div>
-            </div>
-        </div>
+    </div>
 
     </section>
 
