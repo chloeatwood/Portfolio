@@ -31,3 +31,13 @@ cards.forEach((card) => {
     card.style.backgroundColor = randomColor;
 });
 
+//Switch through images for work experience
+function changeCardSlide(btn, direction) {
+    const slider = btn.parentElement;
+    const slides = slider.querySelectorAll('.card-slide');
+    let current = [...slides].findIndex(s => s.classList.contains('active'));
+    
+    slides[current].classList.remove('active');
+    current = (current + direction + slides.length) % slides.length;
+    slides[current].classList.add('active');
+}

@@ -579,3 +579,64 @@ h3 {
   text-decoration: underline;
   color: #333745;
 }
+
+img[alt="Amazon Web Services"],
+img[alt="MySQL"],
+img[alt="Google Cloud Console"] {
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+img[alt="Amazon Web Services"] {
+    width: clamp(60px, 12vw, 80px) !important;
+    height: clamp(60px, 12vw, 80px) !important;
+}
+
+.project-card .card-slide {
+    display: none;
+    max-width: 80%;
+}
+
+.project-card .card-slide.active {
+    display: block;
+    max-width: 80%;
+}
+
+.card-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.card-slide {
+    display: none;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card-slide.active {
+    display: block;
+}
+
+.card-arrow {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.card-slide {
+    display: none;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card-slide.active {
+    display: block;
+}
