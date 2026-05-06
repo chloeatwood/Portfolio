@@ -245,10 +245,20 @@
             </div>
 
 
+            <!-- Interest -->
             <div class="hero-text">
                 <h1>Interests & <span>Passions</span></h1>
                 <p>Some of my special interests, both in technology and beyond.</p>
                 <ul class="languages">
+                    <div class="lang-item">
+                        <img src="Images/Interests//system-integration.png" alt="Systems And Integration" width="80"
+                            style="margin: 10px;">
+                        <span class="tooltip">Systems & Integration</span>
+                    </div>
+                    <div class="lang-item">
+                        <img src="Images/Interests/chihuahua.png" alt="Dogs!" width="80" style="margin: 10px;">
+                        <span class="tooltip">Dogs!</span>
+                    </div>
                     <div class="lang-item">
                         <img src="Images/Interests/xr.png" alt="Extended Reality" width="80" style="margin: 10px;">
                         <span class="tooltip">Extended Reality</span>
@@ -267,21 +277,12 @@
                         <span class="tooltip">Reading</span>
                     </div>
                     <div class="lang-item">
-                        <img src="Images/Interests/UIUX.png" alt="UI/UX Design" width="80" style="margin: 10px;">
-                        <span class="tooltip">UI/UX Design</span>
+                        <img src="Images/Interests/edge-computing.png" alt="Cloud Computing" width="80" style="margin: 10px;">
+                        <span class="tooltip">Cloud Computing</span>
                     </div>
                     <div class="lang-item">
                         <img src="Images/Interests/controller.png" alt="Video Games" width="80" style="margin: 10px;">
                         <span class="tooltip">Video Games</span>
-                    </div>
-                    <div class="lang-item">
-                        <img src="Images/Interests//system-integration.png" alt="Systems And Integration" width="80"
-                            style="margin: 10px;">
-                        <span class="tooltip">Systems & Integration</span>
-                    </div>
-                    <div class="lang-item">
-                        <img src="Images/Interests/chihuahua.png" alt="Dogs!" width="80" style="margin: 10px;">
-                        <span class="tooltip">Dogs!</span>
                     </div>
                 </ul>
 
@@ -315,7 +316,7 @@
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <hr>
-        <p>Click on any of the images below to be taken directly to the GitHub page for the project!</p>
+        <p>Click on any of the images or project titles below to be taken directly to the GitHub page for the project!</p>
 
         <!-- Featured Projects Section -->
         <div class="project-subsection" id="featured-projects">
@@ -346,7 +347,7 @@
                     <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend">
                         <img src="Images/NightfallsHerald.png" alt="Ray Tracing In One Weekend" />
                     </a>
-                    <h4>Ray Tracer</h4>
+                    <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend"><h4>Ray Tracer</h4></a>
                     <p>This project originated from Peter Shirley’s <em>Ray Tracing in One Weekend</em> framework and 
                         was extended into a more advanced physically based rendering implementation. Additions 
                         include support for image and file based texture loading, OBJ mesh parsing, volumetric 
@@ -364,7 +365,8 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h4>Chat n Rate</h4>
+                    <a href="https://github.com/chloeatwood/Chat-N-Rate"><h4>Chat n Rate</h4></a>
+                    
                     <p>
                         As part of a team of four, I helped develop Chat n Rate, a mobile
                         app built with Android Studio and Spring Boot that lets users
@@ -382,7 +384,7 @@
                     <a href="https://github.com/chloeatwood/DungeonGame">
                         <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img">
                     </a>
-                    <h4>Dungeon Crawler</h4>
+                    <a href="https://github.com/chloeatwood/DungeonGame"><h4>Dungeon Crawler</h4></a>
                     <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated
                         dungeons,
                         intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command
@@ -440,7 +442,7 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h4>Chat n Rate</h4>
+                    <a href="https://github.com/chloeatwood/Chat-N-Rate"><h4>Chat n Rate</h4></a>
                     <p>
                         As part of a team of four, I helped develop Chat n Rate, a mobile
                         app built with Android Studio and Spring Boot that lets users
@@ -452,12 +454,29 @@
                         features and backend integration.
                     </p>
                 </div>
+                <div class="project-card">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="./Videos/cloudComputing.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <a href="https://github.com/chloeatwood/Photo-Gallery-Website-Using-Google-Cloud-Console"><h4>Gallery App Infrastructure (Terraform + GCP)</h4></a>
+                    <p>
+                        Built and deployed a full-stack Gallery application on Google 
+                        Cloud Platform using Terraform Infrastructure-as-Code. Provisioned 
+                        VPC networking, Compute Engine VM, Cloud SQL (MySQL), firewall rules, 
+                        and IAM roles. Automated deployment using VM startup scripts and 
+                        configured secure database connectivity. Implemented remote state 
+                        management with GCS and modular Terraform architecture following DevOps best practices.
+                    </p>
+                </div>
                 <!-- AR Mini Mobile Game -->
                 <div class="project-card">
                     <a href="https://github.com/chloeatwood/UnityAR-Practice">
                         <img src="./Images/Cheese.png" alt="Cheese" class="project-img" />
                     </a>
-                    <h4>AR Mobile Mini Game</h4>
+                    <a href="https://github.com/chloeatwood/UnityAR-Practice"><h4>AR Mobile Mini Game</h4></a>
                     <p>
                         A mobile version of the Unity Mini Game (mentioned in next section) that is played in Augmented
                         Reality. It was created in Unity and utilizes Vuforia. All the
@@ -477,7 +496,7 @@
                     <a href="https://github.com/chloeatwood/UnityPractice">
                         <img src="./Images/LivingRoom.png" alt="Living Room Map Image For Game" class="project-img">
                     </a>
-                    <h4>Unity Mini Game</h4>
+                     <a href="https://github.com/chloeatwood/UnityPractice"><h4>Unity Mini Game</h4></a>
                     <p>A game I developed so I could learn Unity. The image is the base of the room you spawn in.
                         Everything in the image was created by me in blender. In this game you play as a mouse and
                         need to run around the living room and find all of the cheese before the time runs out.
@@ -494,7 +513,7 @@
                     <a href="https://github.com/chloeatwood/DungeonGame">
                         <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img">
                     </a>
-                    <h4>Dungeon Crawler</h4>
+                    <a href="https://github.com/chloeatwood/DungeonGame"><h4>Dungeon Crawler</h4></a>
                     <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated
                         dungeons,
                         intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command
@@ -517,7 +536,7 @@
                         <source src="Videos/newMealPrepStore.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <h4>Digital Recipe Box</h4>
+                    <a href="https://github.com/chloeatwood/DigitalRecipeBox"><h4>Digital Recipe Box</h4></a>
                     <p>Created a recipe management platform using React and Node.js. Features include user account
                         creation,
                         recipe search and sorting, purchasing, and review submission. Admins can add, edit, or remove
@@ -528,7 +547,7 @@
                     <a href="https://github.com/chloeatwood/Portfolio">
                         <img src="./Images/WebDeve.jpg" alt="Web Development" class="project-img">
                     </a>
-                    <h4>Portfolio</h4>
+                    <a href="https://github.com/chloeatwood/Portfolio"><h4>Portfolio</h4></a>
                     <p>This is the portfolio site you’re currently viewing, built with HTML, CSS, and JavaScript.
                         It was recently redesigned with Bootstrap for a cleaner layout, improved responsiveness,
                         and a better user experience.</p>
@@ -538,7 +557,7 @@
                         <source src="Videos/newMovie.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <h4>Movie Review Website</h4>
+                    <a href="https://github.com/chloeatwood/Web-Development-Projects/tree/main/MoviesReviewing/src"><h4>Movie Review Website</h4></a>
                     <p>Built a web application that organizes movies by genre from a JSON dataset. Users can search for
                         movies,
                         rate them with a star system, and leave comments, while also seeing ratings and reviews from
@@ -578,12 +597,12 @@
                     <a href="https://github.com/chloeatwood/BlenderStuff">
                         <img src="Images/ScFiImage.png" alt="Blender Creations" />
                     </a>
-                    <h4>Blender Creations</h4>
+                    <a href="https://github.com/chloeatwood/BlenderStuff"><h4>Blender Creations</h4></a>
                     <p>I created and rendered this image using Blender as part of my journey into 3D design.
                         Learning Blender has been both fun and rewarding, and I enjoy experimenting with new techniques.
                     </p>
                 </div>
-                <div class="project-card">
+                <!-- <div class="project-card">
                     <a href="https://github.com/chloeatwood/DigitalArtwork">
                         <img src="Videos/Astronaut.gif" alt="Astronaut gif" />
                     </a>
@@ -592,7 +611,7 @@
                         No images required. Used gradients, animations, and creative shapes to
                         turn simple code into unique, responsive art that works on any screen size.
                     </p>
-                </div>
+                </div> -->
                 <div class="project-card">
                     <video controls>
                         <source src="Videos/newMandelbrot.mp4" type="video/mp4" />
@@ -610,7 +629,7 @@
                     <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend">
                         <img src="Images/NightfallsHerald.png" alt="Ray Tracing In One Weekend" />
                     </a>
-                    <h4>Ray Tracer</h4>
+                    <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend"><h4>Ray Tracer</h4></a>
                     <p>This project originated from Peter Shirley’s <em>Ray Tracing in One Weekend</em> framework and 
                         was extended into a more advanced physically based rendering implementation. Additions 
                         include support for image and file based texture loading, OBJ mesh parsing, volumetric 

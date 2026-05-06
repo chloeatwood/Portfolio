@@ -640,3 +640,8 @@ img[alt="Amazon Web Services"] {
 .card-slide.active {
     display: block;
 }
+
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+}
