@@ -558,26 +558,41 @@ h3 {
 
 /* Nested links list */
 .sub-links {
-  margin-top: 6px;
-  padding-left: 18px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 12px;
 }
 
-/* Nested items */
+/* Space between buttons */
 .sub-links li {
-  margin-bottom: 4px;
-  font-size: 0.9rem;
+  margin-bottom: 10px;
 }
 
-/* Links styling */
+/* Button-style links */
 .sub-links a {
-  color: white;
+  display: inline-block;
+  background: rgba(227, 218, 255, 0.15);   /* Periwinkle tint */
+  color: #e3daff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(227, 218, 255, 0.35);
   text-decoration: none;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
 }
 
+/* Hover effect */
 .sub-links a:hover {
-  text-decoration: underline;
-  color: #333745;
+  background: #e3daff;
+  color: #373f51;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/* Click animation */
+.sub-links a:active {
+  transform: translateY(0);
 }
 
 img[alt="Amazon Web Services"],
