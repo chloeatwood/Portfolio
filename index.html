@@ -318,7 +318,6 @@
         <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
     </section>
 
-
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About Me</h2>
@@ -328,14 +327,21 @@
             border-radius: 10px; margin: 20px auto; display: block;" />
         <p style="font-size: clamp(1rem, 2.5vw, 1.2rem); line-height: 1.6; max-width: 800px; 
                 margin: 2rem auto 0 auto; padding: 0 1rem;">
-            I'm a Senior Software Engineering student in the process of obtaining a Security Clearance who loves creating 
-            applications that are both functional and easy to use.
-            I enjoy projects ranging from typical application development to systems level programming to networking and 
-            data communication.
-            I also enjoy exploring different technologies and finding creative ways to solve problems.
+            Hi, I'm Chloe. I'm a senior Software Engineering student at Iowa State University, graduating in December 2026. 
+            I've got a passion for building reliable, efficient software. I'm particularly interested in systems programming, 
+            C++, networking, and cloud computing, although I like to keep an open mind and enjoy trying new technologies. 
+            I love taking on challenges that push me to learn and grow. Through internships, research, personal projects, and 
+            coursework, I've had the opportunity to work on a wide variety of software, including (but not limited to) secure 
+            communication devices, virtual reality applications, full-stack applications, game development, and networking 
+            applications. These experiences have allowed me to explore many areas of software engineering while strengthening 
+            my passion for solving challenging technical problems.
         </p>
-        <p><strong>Note:</strong> This is an ever-changing portfolio. Due to this fact. There may be sections that are 
-            incomplete. </p>
+        <div>
+            <br>
+            <p><strong>Note:</strong> This is an ever-changing portfolio. Due to this fact. There may be bugs or things that I missed. 
+            If you happen to find any, feel free to reach out and let me know so that I can fix them!</p>
+        </div>
+        
     </section>
 
     <!-- Projects Section -->
@@ -348,6 +354,7 @@
         <div class="project-subsection" id="featured-projects">
             <h3>Featured Projects</h3>
             <div class="project-grid">
+                <!-- OSCAR -->
                 <div class="project-card">
                     <div class="video-wrapper">
                         <video controls>
@@ -369,56 +376,90 @@
 
                 </div>
 
+                <!-- Ray Tracer -->
                 <div class="project-card">
-                    <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend">
+                    <a href="https://github.com/chloeatwood/RenderingEngine/tree/main">
                         <img src="Images/NightfallsHerald.png" alt="Ray Tracing In One Weekend" />
                     </a>
-                    <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend"><h4>Ray Tracer</h4></a>
-                    <p>This project originated from Peter Shirley’s <em>Ray Tracing in One Weekend</em> framework and 
+                    <a href="https://github.com/chloeatwood/RenderingEngine/tree/main"><h4>Ray Tracer</h4></a>
+                    <!-- <p>This project originated from Peter Shirley’s <em>Ray Tracing in One Weekend</em> framework and 
                         was extended into a more advanced physically based rendering implementation. Additions 
                         include support for image and file based texture loading, OBJ mesh parsing, volumetric 
                         scattering and absorption, high-dynamic-range environment maps, procedural Perlin noise textures, 
                         cube maps, lighting, and multi-threaded parallelization for improved render performance. 
                         For a full breakdown of implemented features, click the image to view the project’s Git repository.
+                    </p> -->
+                    <p class="tasks-title">
+                        Created a physically based ray tracing engine in modern C++ with advanced rendering techniques,
+                        optimized performance, and support for realistic lighting and materials.
                     </p>
+
+                    <ul class="tasks-list">
+                        <li>Implemented image-based textures, OBJ mesh loading, HDR environment maps, and cube map rendering</li>
+                        <li>Added volumetric scattering, procedural Perlin noise textures, and physically based material models</li>
+                        <li>Parallelized rendering using multithreading to significantly improve render performance</li>
+                        <li>Developed reusable rendering components with an emphasis on modern C++ design and extensibility</li>
+                        <li>Applied computer graphics concepts including ray-object intersections, lighting, reflections, and global illumination</li>
+                    </ul>
                 </div>
 
-
+                <!-- GCP -->
                 <div class="project-card">
                     <div class="video-wrapper">
                         <video controls>
-                            <source src="Videos/newChatNRate.mp4" type="video/mp4" />
+                            <source src="./Videos/cloudComputing.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <a href="https://github.com/chloeatwood/Chat-N-Rate"><h4>Chat n Rate</h4></a>
-                    
-                    <p>
-                        As part of a team of four, I helped develop Chat n Rate, a mobile
-                        app built with Android Studio and Spring Boot that lets users
-                        review movies, video games, and books. The app includes real-time
-                        chat with friends, the ability to write reviews, leave comments,
-                        and like posts. Users can sort and filter reviews, and live
-                        updates keep the feed fresh and engaging. This project highlights
-                        collaborative full-stack mobile development with real-time
-                        features and backend integration.
+                    <a href="https://github.com/chloeatwood/Photo-Gallery-Website-Using-Google-Cloud-Console"><h4>Gallery App Infrastructure (Terraform + GCP)</h4></a>
+                    <!-- <p>
+                        Built and deployed a full-stack Gallery application on Google 
+                        Cloud Platform using Terraform Infrastructure-as-Code. Provisioned 
+                        VPC networking, Compute Engine VM, Cloud SQL (MySQL), firewall rules, 
+                        and IAM roles. Automated deployment using VM startup scripts and 
+                        configured secure database connectivity. Implemented remote state 
+                        management with GCS and modular Terraform architecture following DevOps best practices.
+                    </p> -->
+                    <p class="tasks-title">
+                        Designed and deployed cloud infrastructure on Google Cloud Platform using Terraform,
+                        automating the provisioning of networking, compute, and database resources.
                     </p>
+
+                    <ul class="tasks-list">
+                        <li>Provisioned VPC networking, Compute Engine virtual machines, Cloud SQL databases, firewall rules, and IAM resources</li>
+                        <li>Developed modular Infrastructure-as-Code using Terraform for repeatable and scalable deployments</li>
+                        <li>Configured secure communication between application servers and managed database services</li>
+                        <li>Automated application deployment using startup scripts and remote Terraform state stored in Google Cloud Storage</li>
+                        <li>Applied cloud architecture and DevOps best practices for infrastructure automation and resource management</li>
+                    </ul>
                 </div>
 
-
+                <!-- Dungeon Crawler -->
                 <div class="project-card">
                     <a href="https://github.com/chloeatwood/DungeonGame">
-                        <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img">
+                        <img src="./Images/DungeonGame.png" alt="Dungeon Crawler">
                     </a>
                     <a href="https://github.com/chloeatwood/DungeonGame"><h4>Dungeon Crawler</h4></a>
-                    <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated
+                    <!-- <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated
                         dungeons,
                         intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command
                         line.
                         A custom min-heap event system manages turn-based gameplay, showcasing object-oriented design
                         and
                         low-level programming. To see how to play it click on the image!
+                    </p> -->
+                    <p class="tasks-title">
+                        Developed a terminal-based roguelike game in C and C++ featuring procedural generation,
+                        intelligent AI behavior, and an event-driven game engine.
                     </p>
+
+                    <ul class="tasks-list">
+                        <li>Implemented procedural dungeon generation with randomized rooms, corridors, monsters, and items</li>
+                        <li>Designed intelligent monster pathfinding using Dijkstra's algorithm for tunneling and non-tunneling enemies</li>
+                        <li>Built a custom min-heap event scheduler to manage turn-based gameplay efficiently</li>
+                        <li>Utilized ncurses for real-time terminal rendering, input handling, and fog-of-war visualization</li>
+                        <li>Applied object-oriented design principles while porting the project from C to modern C++</li>
+                    </ul>
                 </div>
                 
             </div>
@@ -426,35 +467,116 @@
 
 
         <!-- Systems, Networking and Data Communication Section -->
-        <!-- <div class="project-subsection" id="systems-networking">
+        <div class="project-subsection" id="systems-networking">
             <h3>Systems, Networking, and Data Communication</h3>
             <div class="project-grid">
+                <!-- Key-Value Server -->
                 <div class="project-card">
-                    <video controls>
-                        <source src="Videos/newMealPrepStore.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <h4>Basic Client-Server TCP Communication</h4>
-                    <p>Need to come up with a better name.</p>
-                </div>
-                <div class="project-card">
-                    <a href="https://github.com/chloeatwood/Portfolio">
-                        <img src="./Images/WebDeve.jpg" alt="Web Development" class="project-img">
+                    <a href="https://github.com/chloeatwood/Mini-KV-Multi-Threaded-Key-Value-Store">
+                        <img src="./Images/key-value-server.png" alt="Concurrent Key-Value Server">
                     </a>
-                    <h4>Bash Terminal</h4>
-                    <p>Mention built in commands, rerouting commandings, piping, and input/output file stuff</p>
+                    <h4>Concurrent Key-Value Server</h4>
+                    <p class="tasks-title">
+                        Developed a multithreaded TCP key-value server in C featuring concurrent client handling,
+                        thread synchronization, TTL expiration, and durable write-ahead logging.
+                    </p>
+
+                    <ul class="tasks-list">
+                        <li>Implemented a concurrent TCP server using POSIX sockets capable of servicing multiple client connections through a fixed-size thread pool</li>
+                        <li>Designed a bounded FIFO work queue and worker thread architecture using pthreads for scalable request processing</li>
+                        <li>Applied per-bucket reader-writer locks to maximize concurrent reads while safely synchronizing writes to shared data structures</li>
+                        <li>Developed a background sweeper thread for automatic key expiration and implemented thread-safe runtime statistics collection</li>
+                        <li>Implemented write-ahead logging (WAL) to provide crash recovery by replaying persisted operations during server startup</li>
+                    </ul>
                 </div>
+                <!-- Terminal -->
+                <div class="project-card">
+                    <a href="https://github.com/chloeatwood/Mini-Bash-Terminal">
+                        <img src="./Images/bash-terminal.png" alt="Bash Terminal" class="project-img">
+                    </a>
+                    <a href="https://github.com/chloeatwood/Mini-Bash-Terminal"><h4>Mini Unix Shell</h4></a>
+                    <p class="tasks-title">
+                        Developed a Unix-like command shell in C implementing process management,
+                        command execution, and input/output redirection using Linux system calls.
+                    </p>
+                    <ul class="tasks-list">
+                        <li>Implemented command parsing and execution using fork(), exec(), and wait() system calls</li>
+                        <li>Added support for input/output redirection, background execution, and built-in shell commands</li>
+                        <li>Utilized dup2() and file descriptor manipulation to redirect standard input and output streams</li>
+                        <li>Developed pipe handling using POSIX pipes to enable inter-process communication between child processes</li>
+                        <li>Strengthened understanding of Linux process management, file descriptors, and operating system fundamentals</li>
+                    </ul>
+                </div>
+                <!-- Dungeon Crawler -->
+                    <!-- <div class="project-card">
+                        <a href="https://github.com/chloeatwood/DungeonGame">
+                            <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img">
+                        </a>
+                        <a href="https://github.com/chloeatwood/DungeonGame"><h4>Dungeon Crawler</h4></a>
+                        <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated
+                            dungeons,
+                            intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command
+                            line.
+                            A custom min-heap event system manages turn-based gameplay, showcasing object-oriented design
+                            and
+                            low-level programming. To see how to play it click on the image!
+                        </p>
+                    </div> -->
+                <!-- Word Search Generator -->
+                <div class="project-card">
+                    <a href="https://github.com/chloeatwood/WordSearchGenerator">
+                        <img src="./Images/Search.png" alt="Word Search Generator" class="project-img">
+                    </a>
+                    <h4>Word Search Generator</h4>
+                    <p class="tasks-title">
+                        Developed a terminal-based word search puzzle generator in C that creates customizable
+                        puzzles from user-supplied words using dynamic memory management and algorithmic placement.
+                    </p>
+
+                    <ul class="tasks-list">
+                        <li>Implemented algorithms to generate randomized word search puzzles of configurable sizes</li>
+                        <li>Designed logic to place words in multiple directions while preventing invalid character collisions</li>
+                        <li>Utilized dynamic memory allocation to construct puzzle grids and manage user-provided input</li>
+                        <li>Developed a command-line interface supporting customizable puzzle dimensions and word lists</li>
+                        <!-- <li>Applied procedural programming techniques to build an efficient and portable terminal application</li> -->
+                    </ul>
+                </div>
+                <!-- Mandelbrot -->
                 <div class="project-card">
                     <video controls>
-                        <source src="Videos/newMovie.mp4" type="video/mp4" />
+                        <source src="Videos/newMandelbrot.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <h4>ARQ Protocol Handling</h4>
-                    <p>Implemented a custom ARQ protocol with CRC-based error detection.
-                        Simulated packet loss and corruption to test reliability and recovery mechanisms.</p>
+                    <h4>Mandelbrot Explorer</h4>
+                    <p class="tasks-title">
+                        Built an interactive Mandelbrot fractal explorer in C++ that renders fractals directly
+                        within the Linux terminal using ncurses and ASCII graphics.
+                    </p>
+
+                    <ul class="tasks-list">
+                        <li>Implemented Mandelbrot set generation using complex number mathematics and iterative escape-time algorithms</li>
+                        <li>Developed an interactive terminal interface with ncurses supporting real-time zooming and navigation</li>
+                        <li>Rendered fractals using ASCII characters and dynamic color gradients for improved visualization</li>
+                        <!-- <li>Optimized rendering performance to provide responsive exploration of high-detail fractal regions</li> -->
+                        <!-- <li>Strengthened understanding of numerical computation, graphics algorithms, and terminal application development</li> -->
+                    </ul>
                 </div>
+                <!-- Ray Tracer
+                <div class="project-card">
+                        <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend">
+                            <img src="Images/NightfallsHerald.png" alt="Ray Tracing In One Weekend" />
+                        </a>
+                        <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend"><h4>Ray Tracer</h4></a>
+                        <p>This project originated from Peter Shirley’s <em>Ray Tracing in One Weekend</em> framework and 
+                            was extended into a more advanced physically based rendering implementation. Additions 
+                            include support for image and file based texture loading, OBJ mesh parsing, volumetric 
+                            scattering and absorption, high-dynamic-range environment maps, procedural Perlin noise textures, 
+                            cube maps, lighting, and multi-threaded parallelization for improved render performance. 
+                            For a full breakdown of implemented features, click the image to view the project’s Git repository.
+                        </p>
+                    </div> -->
             </div>
-        </div> -->
+        </div>
 
         <!-- Applications & Game Development Subsection -->
         <div class="project-subsection" id="mobile-applications">
@@ -469,18 +591,20 @@
                         </video>
                     </div>
                     <a href="https://github.com/chloeatwood/Chat-N-Rate"><h4>Chat n Rate</h4></a>
-                    <p>
-                        As part of a team of four, I helped develop Chat n Rate, a mobile
-                        app built with Android Studio and Spring Boot that lets users
-                        review movies, video games, and books. The app includes real-time
-                        chat with friends, the ability to write reviews, leave comments,
-                        and like posts. Users can sort and filter reviews, and live
-                        updates keep the feed fresh and engaging. This project highlights
-                        collaborative full-stack mobile development with real-time
-                        features and backend integration.
+                    <p class="tasks-title">
+                        Collaborated on a full-stack Android application that enables users to review media,
+                        communicate in real time, and interact through a shared social platform.
                     </p>
+
+                    <ul class="tasks-list">
+                        <li>Developed Android frontend features using Java and Android Studio within a four-person Agile team</li>
+                        <li>Integrated REST APIs and WebSocket communication to support live messaging and real-time review updates</li>
+                        <li>Implemented user authentication, review creation, comments, likes, and search functionality</li>
+                        <li>Collaborated with backend developers using Spring Boot while utilizing Git for version control and Jira for project management</li>
+                        <li>Applied full-stack software development practices throughout the software development lifecycle</li>
+                    </ul>
                 </div>
-                <div class="project-card">
+                <!-- <div class="project-card">
                     <div class="video-wrapper">
                         <video controls>
                             <source src="./Videos/cloudComputing.mp4" type="video/mp4" />
@@ -496,26 +620,25 @@
                         configured secure database connectivity. Implemented remote state 
                         management with GCS and modular Terraform architecture following DevOps best practices.
                     </p>
-                </div>
+                </div> -->
                 <!-- AR Mini Mobile Game -->
                 <div class="project-card">
                     <a href="https://github.com/chloeatwood/UnityAR-Practice">
                         <img src="./Images/Cheese.png" alt="Cheese" class="project-img" />
                     </a>
                     <a href="https://github.com/chloeatwood/UnityAR-Practice"><h4>AR Mobile Mini Game</h4></a>
-                    <p>
-                        A mobile version of the Unity Mini Game (mentioned in next section) that is played in Augmented
-                        Reality. It was created in Unity and utilizes Vuforia. All the
-                        same rules apply in this app as in the previous version except you
-                        must play it on your phone. Once you load up the app you must scan
-                        an image target after putting it on the floor in order to spawn
-                        the room so you can play. You must the use your phone as your eyes
-                        in the game to look around. Moving is done by controller buttons
-                        on the screen although you may also attempt to walk about in the
-                        real world, the game will just be a lot harder that way. Be
-                        careful, this game may sound fun but it is a lot more difficult in
-                        this version than the last.
+                    <p class="tasks-title">
+                        Developed an augmented reality mobile game in Unity using Vuforia, combining interactive
+                        gameplay with real-world image tracking and spatial visualization.
                     </p>
+
+                    <ul class="tasks-list">
+                        <li>Designed and implemented an augmented reality game using Unity and the Vuforia SDK</li>
+                        <li>Utilized image targets to anchor and render virtual environments within real-world spaces</li>
+                        <li>Implemented player movement, object collection mechanics, and interactive gameplay systems</li>
+                        <!-- <li>Optimized the application for mobile devices while integrating touch-based controls</li> -->
+                        <!-- <li>Applied augmented reality development principles, computer graphics, and game design techniques</li> -->
+                    </ul>
                 </div>
                 <!-- Unity Mini Game -->
                 <div class="project-card">
@@ -523,32 +646,20 @@
                         <img src="./Images/LivingRoom.png" alt="Living Room Map Image For Game" class="project-img">
                     </a>
                      <a href="https://github.com/chloeatwood/UnityPractice"><h4>Unity Mini Game</h4></a>
-                    <p>A game I developed so I could learn Unity. The image is the base of the room you spawn in.
-                        Everything in the image was created by me in blender. In this game you play as a mouse and
-                        need to run around the living room and find all of the cheese before the time runs out.
-                        In order to collect all the cheese you must first find the cheese that allows you to jump
-                        so you can do a little bit of parkour. Be careful as you can only jump high enough to do the
-                        parkour for a limited amount of time before you will have to go collect the cheese again.
-                        There is one special piece of cheese that must be collected although you might want to save
-                        it for last because if you collect it and do not have enough of the other cheese it will
-                        respawn.
+                    <p class="tasks-title">
+                        Designed and developed a 3D Unity game to explore game development, interactive systems,
+                        and custom environment creation.
                     </p>
+
+                    <ul class="tasks-list">
+                        <li>Developed gameplay mechanics including player movement, collectible items, timers, and progression systems</li>
+                        <li>Created custom 3D assets and environments using Blender before integrating them into Unity</li>
+                        <li>Implemented game logic using C# scripts and Unity's component-based architecture</li>
+                        <!-- <li>Designed interactive level mechanics requiring exploration and platforming to complete objectives</li> -->
+                        <!-- <li>Gained experience with the complete game development pipeline from asset creation to gameplay implementation</li> -->
+                    </ul>
                 </div>
-                <!-- Dungeon Crawler -->
-                <div class="project-card">
-                    <a href="https://github.com/chloeatwood/DungeonGame">
-                        <img src="./Images/DungeonGame.png" alt="Dungeon Crawler" class="project-img">
-                    </a>
-                    <a href="https://github.com/chloeatwood/DungeonGame"><h4>Dungeon Crawler</h4></a>
-                    <p>I built a terminal-based dungeon crawler in C and C++ that features procedurally generated
-                        dungeons,
-                        intelligent monster AI, item mechanics, and fog of war—all rendered with ncurses in the command
-                        line.
-                        A custom min-heap event system manages turn-based gameplay, showcasing object-oriented design
-                        and
-                        low-level programming. To see how to play it click on the image!
-                    </p>
-                </div>
+                
             </div>
         </div>
 
@@ -557,66 +668,75 @@
         <div class="project-subsection" id="web-development">
             <h3>Web Development</h3>
             <div class="project-grid">
+                <!-- Digital Recipe Store -->
                 <div class="project-card">
                     <video controls>
                         <source src="Videos/newMealPrepStore.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                     <a href="https://github.com/chloeatwood/DigitalRecipeBox"><h4>Digital Recipe Box</h4></a>
-                    <p>Created a recipe management platform using React and Node.js. Features include user account
-                        creation,
-                        recipe search and sorting, purchasing, and review submission. Admins can add, edit, or remove
-                        recipes
-                        for public viewing.</p>
+                    <p class="tasks-title">
+                        Developed a full-stack recipe management platform with user authentication, recipe
+                        management, and administrative functionality using modern web technologies.
+                    </p>
+
+                    <ul class="tasks-list">
+                        <li>Built a responsive frontend using React with reusable components and dynamic user interfaces</li>
+
+                        <li>Developed backend functionality with Node.js to support user accounts, recipes, and administrative tools</li>
+
+                        <li>Implemented recipe searching, filtering, reviews, and user account management features</li>
+
+                        <li>Designed responsive layouts to provide a consistent experience across desktop and mobile devices</li>
+
+                        <!-- <li>Applied full-stack development principles including frontend, backend, and data management integration</li> -->
+                    </ul>
                 </div>
+                <!-- Portfolio -->
                 <div class="project-card">
                     <a href="https://github.com/chloeatwood/Portfolio">
                         <img src="./Images/WebDeve.jpg" alt="Web Development" class="project-img">
                     </a>
                     <a href="https://github.com/chloeatwood/Portfolio"><h4>Portfolio</h4></a>
-                    <p>This is the portfolio site you’re currently viewing, built with HTML, CSS, and JavaScript.
-                        It was recently redesigned with Bootstrap for a cleaner layout, improved responsiveness,
-                        and a better user experience.</p>
+                    <p class="tasks-title">
+                        Designed and developed a responsive portfolio website to showcase software engineering
+                        projects, technical skills, and professional experience.
+                    </p>
+
+                    <ul class="tasks-list">
+                        <li>Built the website using HTML, CSS, JavaScript, and Bootstrap with responsive design principles</li>
+                        <li>Designed reusable UI components to organize projects, skills, and experience into a clean, navigable interface</li>
+                        <li>Implemented interactive elements including project media, navigation, and responsive layouts</li>
+                        <li>Continuously maintain and expand the site with new projects, technologies, and design improvements</li>
+                        <!-- <li>Applied modern web development practices to create an accessible and professional online portfolio</li> -->
+                    </ul>
                 </div>
+                <!-- Movie -->
                 <div class="project-card">
                     <video controls>
                         <source src="Videos/newMovie.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                     <a href="https://github.com/chloeatwood/Web-Development-Projects/tree/main/MoviesReviewing/src"><h4>Movie Review Website</h4></a>
-                    <p>Built a web application that organizes movies by genre from a JSON dataset. Users can search for
-                        movies,
-                        rate them with a star system, and leave comments, while also seeing ratings and reviews from
-                        other users.</p>
+                    <p class="tasks-title">
+                        Developed a web application that allows users to browse, search, and review movies while
+                        interacting with community ratings and comments.
+                    </p>
+
+                    <ul class="tasks-list">
+                        <li>Built an interactive web application using HTML, CSS, JavaScript, and JSON data sources</li>
+                        <li>Implemented movie searching, filtering, star ratings, and user review functionality</li>
+                        <li>Designed dynamic interfaces to display movie information organized by genre</li>
+                        <li>Developed client-side logic for managing user interactions and updating displayed content</li>
+                        <!-- <li>Strengthened frontend web development skills through responsive interface design and JavaScript programming</li> -->
+                    </ul>
                 </div>
 
             </div>
         </div>
 
-        <!-- Utilitiess and Toolss
-        <div class="project-subsection" id="utilities-tools">
-            <h3>Utilities & Tools</h3>
-            <div class="project-grid">
-                <div class="project-card">
-                    <a href="https://github.com/chloeatwood/WordSearchGenerator">
-                        <img src="./Images/Search.png" alt="Word Search Generator" class="project-img">
-                    </a>
-                    <h4>Word Search Generator</h4>
-                    <p>This project involved creating a Word Search Generator in C. It is used in a terminal.
-                        In order to run it you must navigate to the folder location inside your terminal and type:
-                        <br>make WordSearchGenerator <br> After that you may use it to create a square word search. To
-                        do this
-                        type ./WordSearchGenerator 'Number of rows/columns you want' 'As many words as you want'. An
-                        example
-                        of this would be to type: <br> ./WordSearchGenerator 20 Books Chloe WebDevelopment Software
-                        Engineer
-                    </p>
-                </div>
-            </div>
-        </div> -->
-
         <!-- Modeling and Visualization Subsection -->
-        <div class="project-subsection" id="modeling-visualization">
+        <!-- <div class="project-subsection" id="modeling-visualization">
             <h3>Modeling and Visualization</h3>
             <div class="project-grid">
                 <div class="project-card">
@@ -627,45 +747,9 @@
                     <p>I created and rendered this image using Blender as part of my journey into 3D design.
                         Learning Blender has been both fun and rewarding, and I enjoy experimenting with new techniques.
                     </p>
-                </div>
-                <!-- <div class="project-card">
-                    <a href="https://github.com/chloeatwood/DigitalArtwork">
-                        <img src="Videos/Astronaut.gif" alt="Astronaut gif" />
-                    </a>
-                    <h4>Web Art</h4>
-                    <p>Built interactive, visually striking pieces entirely with HTML and CSS.
-                        No images required. Used gradients, animations, and creative shapes to
-                        turn simple code into unique, responsive art that works on any screen size.
-                    </p>
-                </div> -->
-                <div class="project-card">
-                    <video controls>
-                        <source src="Videos/newMandelbrot.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <h4>Mandelbrot Explorer</h4>
-                    <p>An interactive Mandelbrot fractal explorer built in C++ with ncurses.
-                        The program renders fractals directly in the terminal using ASCII characters and dynamic color
-                        gradients.
-                        Users can zoom in, pan around, and explore the infinite detail of the Mandelbrot all from a
-                        command-line interface.</p>
-                </div>
-
-                <div class="project-card">
-                    <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend">
-                        <img src="Images/NightfallsHerald.png" alt="Ray Tracing In One Weekend" />
-                    </a>
-                    <a href="https://github.com/chloeatwood/RenderingEngine/tree/main/RayTracingInOneWeekend"><h4>Ray Tracer</h4></a>
-                    <p>This project originated from Peter Shirley’s <em>Ray Tracing in One Weekend</em> framework and 
-                        was extended into a more advanced physically based rendering implementation. Additions 
-                        include support for image and file based texture loading, OBJ mesh parsing, volumetric 
-                        scattering and absorption, high-dynamic-range environment maps, procedural Perlin noise textures, 
-                        cube maps, lighting, and multi-threaded parallelization for improved render performance. 
-                        For a full breakdown of implemented features, click the image to view the project’s Git repository.
-                    </p>
-                </div>
+                </div>               
             </div>
-        </div>
+        </div> -->
     </div>
 
     </section>

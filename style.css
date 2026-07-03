@@ -6,6 +6,13 @@
     Reseda Green: 748b75 
     Electric Blue: 87f5fb*/
 
+.project-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
 * {
   margin: 0;
   padding: 0;
