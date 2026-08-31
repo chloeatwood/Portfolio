@@ -191,16 +191,13 @@ function createBubble() {
     if (!bubbleGameRunning) {
         return;
     }
-
     const bubble = document.createElement("div");
     bubble.classList.add("game-bubble");
-
 
     // Random size
     const size = Math.floor(Math.random() * 55) + 35;
     bubble.style.width = `${size}px`;
     bubble.style.height = `${size}px`;
-
 
     // Random horizontal position
     const maxLeft = bubbleGameArea.clientWidth - size;
@@ -240,11 +237,11 @@ function popBubble(bubble) {
     if (bubble.classList.contains("popping")) {
         return;
     }
-
     bubble.classList.add("popping");
 
     // Increase score
     bubbleScore++;
+    playPopSound();
     bubbleScoreDisplay.textContent = bubbleScore;
 
     // Show +1 animation
@@ -254,8 +251,6 @@ function popBubble(bubble) {
     setTimeout(() => {
         bubble.remove();
     }, 200);
-
-
 }
 
 /* ---------------------------------------------------------
@@ -263,33 +258,18 @@ Show +1 points
 --------------------------------------------------------- */
 
 function showPoints(bubble) {
-
     const points = document.createElement("div");
-
     points.classList.add("bubble-points");
-
     points.textContent = "+1";
-
-
     const bubbleLeft = parseFloat(bubble.style.left);
-
     const bubbleTop = bubble.offsetTop;
-
-
     points.style.left = `${bubbleLeft + bubble.offsetWidth / 2}px`;
-
     points.style.top = `${bubbleTop}px`;
 
-
     bubbleGameArea.appendChild(points);
-
-
     setTimeout(() => {
-
         points.remove();
-
     }, 700);
-
 }
 
 /* ---------------------------------------------------------
@@ -298,11 +278,9 @@ End game
 
 function endBubbleGame() {
 
-if (!bubbleGameRunning) {
-    return;
-}
-
-
+    if (!bubbleGameRunning) {
+        return;
+    }
     stopBubbleGame();
     const gameOverMessage = document.createElement("div");
     gameOverMessage.classList.add("bubble-game-over");
@@ -337,6 +315,27 @@ document.addEventListener("keydown", (event) => {
         bubbleGame.classList.remove("active");
         stopBubbleGame();
     }
-
 });
+
+/* ---------------------------------------------------------
+SOUND
+--------------------------------------------------------- */
+function playPopSound() {
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const oscillator = audioCtx.createOscillator();
+    const gainNode = audioCtx.createGain();
+
+    oscillator.connect(gainNode);
+    gainNode.connect(audioCtx.destination);
+
+    oscillator.type = 'sine';
+    oscillator.frequency.setValueAtTime(600, audioCtx.currentTime);
+    oscillator.frequency.exponentialRampToValueAtTime(150, audioCtx.currentTime + 0.1);
+
+    gainNode.gain.setValueAtTime(0.3, audioCtx.currentTime);
+    gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.15);
+
+    oscillator.start(audioCtx.currentTime);
+    oscillator.stop(audioCtx.currentTime + 0.15);
+}
 
