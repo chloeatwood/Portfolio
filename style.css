@@ -667,3 +667,319 @@ img[alt="Amazon Web Services"] {
   text-decoration: none;
   color: inherit;
 }
+
+/* =========================================================
+BUBBLE POPPING EASTER EGG GAME
+========================================================= */
+
+/* Corner button */
+#bored-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 900;
+  background: #5C5C99;
+  color: #e3daff;
+  border: 2px solid #e3daff;
+  border-radius: 25px;
+  padding: 10px 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s ease;
+}
+
+#bored-button:hover {
+  background: #e3daff;
+  color: #5C5C99;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Main game overlay */
+.bubble-game {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  background: rgba(55, 63, 81, 0.97);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Show game */
+.bubble-game.active {
+  display: flex;
+}
+
+/* Game header */
+.bubble-game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 30px;
+  background: #373f51;
+  border-bottom: 2px solid rgba(227, 218, 255, 0.3);
+  position: relative;
+  z-index: 5;
+}
+
+.bubble-game-header h2 {
+  margin: 0;
+  color: #e3daff;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.bubble-game-header p {
+  margin: 3px 0 0;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Score */
+.bubble-score {
+  color: #87f5fb;
+  font-size: 1.3rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+#bubble-score {
+  color: #e3daff;
+}
+
+/* Close button */
+.bubble-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.bubble-close:hover {
+  color: #87f5fb;
+  transform: scale(1.15);
+}
+
+/* Game area */
+.bubble-game-area {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background:
+      radial-gradient(
+          circle at 50% 100%,
+          rgba(92, 92, 153, 0.4),
+          transparent 50%
+      );
+}
+
+/* Start message */
+.bubble-start-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(55, 63, 81, 0.9);
+  padding: 30px 40px;
+  border-radius: 20px;
+  border: 2px solid rgba(227, 218, 255, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  z-index: 4;
+}
+
+.bubble-start-message h3 {
+  margin-bottom: 10px;
+  color: #e3daff;
+}
+
+.bubble-start-message p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Start / restart buttons */
+.bubble-start-button,
+.bubble-restart-button {
+  background: #5C5C99;
+  color: #e3daff;
+  border: 1px solid #e3daff;
+  border-radius: 20px;
+  padding: 9px 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bubble-start-button:hover,
+.bubble-restart-button:hover {
+  background: #e3daff;
+  color: #5C5C99;
+  transform: translateY(-2px);
+}
+
+/* Individual bubbles */
+.game-bubble {
+  position: absolute;
+  bottom: -100px;
+  border-radius: 50%;
+  cursor: pointer;
+  /* user-select: none; */
+  touch-action: manipulation;
+  background:
+      radial-gradient(
+          circle at 30% 25%,
+          rgba(255, 255, 255, 0.85),
+          rgba(135, 245, 251, 0.55) 25%,
+          rgba(92, 92, 153, 0.65) 70%,
+          rgba(227, 218, 255, 0.25)
+      );
+  border: 2px solid rgba(227, 218, 255, 0.7);
+  box-shadow:
+      inset -5px -8px 15px rgba(55, 63, 81, 0.25),
+      0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: bubble-rise linear forwards;
+  transition: transform 0.1s ease;
+}
+
+.game-bubble:hover {
+  transform: scale(1.12);
+}
+
+/* Bubble floating animation */
+@keyframes bubble-rise {
+  from {
+  bottom: -100px;
+  }
+  to {
+      bottom: 110%;
+  }
+}
+
+/* Pop animation */
+.game-bubble.popping {
+  animation: bubble-pop 0.2s ease-out forwards !important;
+  pointer-events: none;
+}
+
+@keyframes bubble-pop {
+  0% {
+  transform: scale(1);
+  opacity: 1;
+  }
+  50% {
+      transform: scale(1.4);
+      opacity: 0.8;
+  }
+
+  100% {
+      transform: scale(0);
+      opacity: 0;
+  }
+}
+
+/* +1 score text */
+.bubble-points {
+  position: absolute;
+  pointer-events: none;
+  color: #87f5fb;
+  font-size: 1.2rem;
+  font-weight: 600;
+  animation: points-float 0.7s ease-out forwards;
+  z-index: 3;
+}
+
+@keyframes points-float {
+  from {
+  transform: translateY(0);
+  opacity: 1;
+  } to {
+      transform: translateY(-40px);
+      opacity: 0;
+  }
+}
+
+/* Bottom game bar */
+.bubble-game-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  background: #373f51;
+  border-top: 2px solid rgba(227, 218, 255, 0.3);
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+
+/* Game over message */
+.bubble-game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(55, 63, 81, 0.95);
+  padding: 30px 45px;
+  border-radius: 20px;
+  border: 2px solid #e3daff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.bubble-game-over h3 {
+  color: #e3daff;
+  margin-bottom: 10px;
+}
+
+.bubble-game-over p {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+
+#bored-button {
+    bottom: 12px;
+    right: 12px;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+}
+
+.bubble-game-header {
+    padding: 15px;
+    gap: 10px;
+}
+
+.bubble-game-header p {
+    display: none;
+}
+
+.bubble-score {
+    font-size: 1rem;
+}
+
+.bubble-close {
+    font-size: 1.5rem;
+}
+
+.bubble-start-message {
+    width: 85%;
+    padding: 25px 20px;
+}
+
+.bubble-game-footer {
+    padding: 10px 15px;
+}
+
+}
