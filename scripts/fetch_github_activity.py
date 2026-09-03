@@ -24,6 +24,7 @@ OUTPUT_PATH = os.environ.get("OUTPUT_PATH", "data/github-activity.json")
 CURRENTLY_WORKING_ON = [
     {"repo": "BookScout", "note": "Active development", "emoji": "\U0001F4DA"},
     {"repo": "Portfolio", "note": "Active development", "emoji": "\U0001F4BB"},
+    {"repo": "ML-Learning", "note": "Active development", "emoji": "\U0001F9E0"},
 ]
 
 API_ROOT = "https://api.github.com"

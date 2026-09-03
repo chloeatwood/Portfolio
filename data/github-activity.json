@@ -1,6 +1,6 @@
 {
   "username": "chloeatwood",
-  "generated_at": "2026-09-03T22:28:39.154350+00:00",
+  "generated_at": "2026-09-03T22:31:29.297136+00:00",
   "currently_working_on": [
     {
       "repo": "BookScout",
@@ -11,6 +11,11 @@
       "repo": "Portfolio",
       "note": "Active development",
       "emoji": "\ud83d\udcbb"
+    },
+    {
+      "repo": "ML-Learning",
+      "note": "Active development",
+      "emoji": "\ud83e\udde0"
     }
   ],
   "heatmap": {
