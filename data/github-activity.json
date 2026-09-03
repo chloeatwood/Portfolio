@@ -1,6 +1,6 @@
 {
   "username": "chloeatwood",
-  "generated_at": "2026-09-03T21:19:36.542915+00:00",
+  "generated_at": "2026-09-03T21:32:00.993117+00:00",
   "currently_working_on": [
     {
       "repo": "BookScout",
@@ -13,8 +13,94 @@
       "emoji": "\ud83d\udcbb"
     }
   ],
-  "heatmap": {},
+  "heatmap": {
+    "2026-08-31": 5,
+    "2026-09-02": 1,
+    "2026-09-03": 1
+  },
   "recent_commits": [],
-  "recently_updated_repos": [],
-  "languages": []
+  "recently_updated_repos": [
+    {
+      "name": "Portfolio",
+      "url": "https://github.com/chloeatwood/Portfolio",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "pushed_at": "2026-09-03T21:31:45Z"
+    },
+    {
+      "name": "Expedia-clone",
+      "url": "https://github.com/chloeatwood/Expedia-clone",
+      "description": "Clone of Expedia.in which is basically a travel helping hand website, where one can book flights, trains and hotels also explore places.",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushed_at": "2026-09-03T19:27:00Z"
+    },
+    {
+      "name": "BookScout",
+      "url": "https://github.com/chloeatwood/BookScout",
+      "description": "Personal Project Book Tracker. Hopefully will one day track the prices of books from different websites so that a user can find the cheapest option to buy a book.",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushed_at": "2026-09-03T15:40:12Z"
+    },
+    {
+      "name": "ML-Learning",
+      "url": "https://github.com/chloeatwood/ML-Learning",
+      "description": "The space I am using in an attempt to learn ML and AI concepts",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2026-09-02T23:31:21Z"
+    },
+    {
+      "name": "Photo-Gallery-Website-Using-Google-Cloud-Console",
+      "url": "https://github.com/chloeatwood/Photo-Gallery-Website-Using-Google-Cloud-Console",
+      "description": null,
+      "language": "CSS",
+      "stars": 0,
+      "pushed_at": "2026-05-06T20:31:37Z"
+    },
+    {
+      "name": "Chat-N-Rate",
+      "url": "https://github.com/chloeatwood/Chat-N-Rate",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "pushed_at": "2026-05-06T20:19:21Z"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Python",
+      "percent": 21.7
+    },
+    {
+      "language": "HTML",
+      "percent": 17.4
+    },
+    {
+      "language": "JavaScript",
+      "percent": 17.4
+    },
+    {
+      "language": "C",
+      "percent": 17.4
+    },
+    {
+      "language": "CSS",
+      "percent": 8.7
+    },
+    {
+      "language": "C#",
+      "percent": 8.7
+    },
+    {
+      "language": "TypeScript",
+      "percent": 4.3
+    },
+    {
+      "language": "C++",
+      "percent": 4.3
+    }
+  ]
 }
