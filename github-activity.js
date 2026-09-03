@@ -85,7 +85,6 @@
           <p>${escapeHtml(r.description || "No description provided.")}</p>
           <div class="gh-repo-meta">
             ${r.language ? `<span class="gh-lang-dot"></span>${r.language}` : ""}
-            <span>★ ${r.stars}</span>
             <span>Updated ${timeAgo(r.pushed_at)}</span>
           </div>
         </a>`

@@ -153,20 +153,34 @@ def build_contribution_heatmap(events, days_back=120):
     return full_range
 
 
-def build_recent_commits(events, limit=8):
+def fetch_recent_commits_from_repos(repos, username, limit=8, repos_to_check=6):
+    """Pulls real commit history directly from each repo's commits endpoint,
+    filtered to this user's authorship. Far more reliable than the public
+    Events API, which misses commits that landed via squash-merged PRs,
+    force pushes, or pushes older than ~90 days."""
+    sorted_repos = sorted(repos, key=lambda r: r.get("pushed_at") or "", reverse=True)
     commits = []
-    for e in events:
-        if e.get("type") != "PushEvent":
+    for r in sorted_repos[:repos_to_check]:
+        full_name = r.get("full_name")
+        if not full_name:
             continue
-        repo_name = e.get("repo", {}).get("name", "")
-        for c in e.get("payload", {}).get("commits", []):
+        data = _get(f"{API_ROOT}/repos/{full_name}/commits?author={username}&per_page=5")
+        if not data:
+            continue
+        for c in data:
+            commit_info = c.get("commit", {})
+            message = commit_info.get("message", "")
+            date = (
+                commit_info.get("author", {}).get("date")
+                or commit_info.get("committer", {}).get("date")
+            )
             commits.append({
-                "repo": repo_name,
-                "message": c.get("message", "").split("\n")[0][:120],
+                "repo": full_name,
+                "message": message.split("\n")[0][:120],
                 "sha": (c.get("sha") or "")[:7],
-                "date": e.get("created_at"),
+                "date": date,
             })
-    commits.sort(key=lambda c: c["date"], reverse=True)
+    commits.sort(key=lambda c: c["date"] or "", reverse=True)
     return commits[:limit]
 
 
@@ -191,7 +205,7 @@ def build_recently_updated_repos(repos, limit=6):
             "url": r.get("html_url"),
             "description": r.get("description"),
             "language": r.get("language"),
-            "stars": r.get("stargazers_count", 0),
+            # "stars": r.get("stargazers_count", 0),
             "pushed_at": r.get("pushed_at"),
         }
         for r in sorted_repos[:limit]
@@ -220,7 +234,7 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "currently_working_on": CURRENTLY_WORKING_ON,
         "heatmap": heatmap,
-        "recent_commits": build_recent_commits(events),
+        "recent_commits": fetch_recent_commits_from_repos(repos, USERNAME),
         "recently_updated_repos": build_recently_updated_repos(repos),
         "languages": build_language_breakdown(repos),
     }
