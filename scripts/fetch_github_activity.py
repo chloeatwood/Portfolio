@@ -68,9 +68,75 @@ def fetch_repos(username):
     return data or []
 
 
-def build_contribution_heatmap(events):
-    """Rough daily activity counts derived from public events (not the exact
-    GitHub contribution graph algorithm, but a close visual approximation)."""
+def fetch_contribution_calendar_graphql(username):
+    """Pulls the exact same contribution calendar data shown on the user's
+    GitHub profile page, via the GraphQL API. Requires an authenticated
+    request (any valid token works for reading this public data) -- the
+    GitHub Actions workflow provides GITHUB_TOKEN automatically. Returns
+    None if no token is available so the caller can fall back."""
+    token = os.environ.get("GITHUB_TOKEN")
+    if not token:
+        return None
+
+    query = """
+    query($login: String!) {
+      user(login: $login) {
+        contributionsCollection {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                date
+                contributionCount
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+    body = json.dumps({"query": query, "variables": {"login": username}}).encode("utf-8")
+    req = urllib.request.Request(
+        f"{API_ROOT}/graphql",
+        data=body,
+        method="POST",
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json",
+            "User-Agent": f"{username}-portfolio-github-activity-script",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except Exception as e:  # noqa: BLE001
+        print(f"GraphQL contribution calendar request failed: {e}", file=sys.stderr)
+        return None
+
+    if data.get("errors"):
+        print(f"GraphQL errors: {data['errors']}", file=sys.stderr)
+        return None
+
+    try:
+        weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+    except (KeyError, TypeError):
+        return None
+
+    heatmap = {}
+    for week in weeks:
+        for day in week["contributionDays"]:
+            heatmap[day["date"]] = day["contributionCount"]
+    return heatmap
+
+
+def build_contribution_heatmap(events, days_back=120):
+    """Fallback: daily activity counts derived from public events, filled in
+    for every day in the range (not just days with activity). Only used
+    when a GraphQL token isn't available -- this is an approximation and
+    will undercount compared to your real profile graph, since the Events
+    API only covers ~90 days and misses PR reviews, issue comments, etc."""
+    from datetime import timedelta
+
     counts = defaultdict(int)
     for e in events:
         created = e.get("created_at")
@@ -78,7 +144,13 @@ def build_contribution_heatmap(events):
             continue
         day = created[:10]
         counts[day] += 1
-    return dict(sorted(counts.items()))
+
+    today = datetime.now(timezone.utc).date()
+    full_range = {}
+    for i in range(days_back, -1, -1):
+        day_str = (today - timedelta(days=i)).isoformat()
+        full_range[day_str] = counts.get(day_str, 0)
+    return full_range
 
 
 def build_recent_commits(events, limit=8):
@@ -130,11 +202,24 @@ def main():
     events = fetch_public_events(USERNAME)
     repos = fetch_repos(USERNAME)
 
+    heatmap = fetch_contribution_calendar_graphql(USERNAME)
+    if heatmap is None:
+        print(
+            "No GITHUB_TOKEN available (or GraphQL call failed) -- falling back to an "
+            "approximate heatmap built from public events, which only covers ~90 days "
+            "and undercounts vs. your real profile graph. This will resolve itself "
+            "automatically when the GitHub Actions workflow runs, since it provides "
+            "GITHUB_TOKEN. To test the accurate version locally, set a personal access "
+            "token (no scopes needed) as GITHUB_TOKEN before running this script.",
+            file=sys.stderr,
+        )
+        heatmap = build_contribution_heatmap(events)
+
     output = {
         "username": USERNAME,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "currently_working_on": CURRENTLY_WORKING_ON,
-        "heatmap": build_contribution_heatmap(events),
+        "heatmap": heatmap,
         "recent_commits": build_recent_commits(events),
         "recently_updated_repos": build_recently_updated_repos(repos),
         "languages": build_language_breakdown(repos),

@@ -1,6 +1,6 @@
 {
   "username": "chloeatwood",
-  "generated_at": "2026-09-03T21:19:36.542915+00:00",
+  "generated_at": "2026-09-03T21:42:55.988156+00:00",
   "currently_working_on": [
     {
       "repo": "BookScout",
@@ -13,8 +13,212 @@
       "emoji": "\ud83d\udcbb"
     }
   ],
-  "heatmap": {},
+  "heatmap": {
+    "2026-05-06": 0,
+    "2026-05-07": 0,
+    "2026-05-08": 0,
+    "2026-05-09": 0,
+    "2026-05-10": 0,
+    "2026-05-11": 0,
+    "2026-05-12": 0,
+    "2026-05-13": 0,
+    "2026-05-14": 0,
+    "2026-05-15": 0,
+    "2026-05-16": 0,
+    "2026-05-17": 0,
+    "2026-05-18": 0,
+    "2026-05-19": 0,
+    "2026-05-20": 0,
+    "2026-05-21": 0,
+    "2026-05-22": 0,
+    "2026-05-23": 0,
+    "2026-05-24": 0,
+    "2026-05-25": 0,
+    "2026-05-26": 0,
+    "2026-05-27": 0,
+    "2026-05-28": 0,
+    "2026-05-29": 0,
+    "2026-05-30": 0,
+    "2026-05-31": 0,
+    "2026-06-01": 0,
+    "2026-06-02": 0,
+    "2026-06-03": 0,
+    "2026-06-04": 0,
+    "2026-06-05": 0,
+    "2026-06-06": 0,
+    "2026-06-07": 0,
+    "2026-06-08": 0,
+    "2026-06-09": 0,
+    "2026-06-10": 0,
+    "2026-06-11": 0,
+    "2026-06-12": 0,
+    "2026-06-13": 0,
+    "2026-06-14": 0,
+    "2026-06-15": 0,
+    "2026-06-16": 0,
+    "2026-06-17": 0,
+    "2026-06-18": 0,
+    "2026-06-19": 0,
+    "2026-06-20": 0,
+    "2026-06-21": 0,
+    "2026-06-22": 0,
+    "2026-06-23": 0,
+    "2026-06-24": 0,
+    "2026-06-25": 0,
+    "2026-06-26": 0,
+    "2026-06-27": 0,
+    "2026-06-28": 0,
+    "2026-06-29": 0,
+    "2026-06-30": 0,
+    "2026-07-01": 0,
+    "2026-07-02": 0,
+    "2026-07-03": 0,
+    "2026-07-04": 0,
+    "2026-07-05": 0,
+    "2026-07-06": 0,
+    "2026-07-07": 0,
+    "2026-07-08": 0,
+    "2026-07-09": 0,
+    "2026-07-10": 0,
+    "2026-07-11": 0,
+    "2026-07-12": 0,
+    "2026-07-13": 0,
+    "2026-07-14": 0,
+    "2026-07-15": 0,
+    "2026-07-16": 0,
+    "2026-07-17": 0,
+    "2026-07-18": 0,
+    "2026-07-19": 0,
+    "2026-07-20": 0,
+    "2026-07-21": 0,
+    "2026-07-22": 0,
+    "2026-07-23": 0,
+    "2026-07-24": 0,
+    "2026-07-25": 0,
+    "2026-07-26": 0,
+    "2026-07-27": 0,
+    "2026-07-28": 0,
+    "2026-07-29": 0,
+    "2026-07-30": 0,
+    "2026-07-31": 0,
+    "2026-08-01": 0,
+    "2026-08-02": 0,
+    "2026-08-03": 0,
+    "2026-08-04": 0,
+    "2026-08-05": 0,
+    "2026-08-06": 0,
+    "2026-08-07": 0,
+    "2026-08-08": 0,
+    "2026-08-09": 0,
+    "2026-08-10": 0,
+    "2026-08-11": 0,
+    "2026-08-12": 0,
+    "2026-08-13": 0,
+    "2026-08-14": 0,
+    "2026-08-15": 0,
+    "2026-08-16": 0,
+    "2026-08-17": 0,
+    "2026-08-18": 0,
+    "2026-08-19": 0,
+    "2026-08-20": 0,
+    "2026-08-21": 0,
+    "2026-08-22": 0,
+    "2026-08-23": 0,
+    "2026-08-24": 0,
+    "2026-08-25": 0,
+    "2026-08-26": 0,
+    "2026-08-27": 0,
+    "2026-08-28": 0,
+    "2026-08-29": 0,
+    "2026-08-30": 0,
+    "2026-08-31": 5,
+    "2026-09-01": 0,
+    "2026-09-02": 1,
+    "2026-09-03": 1
+  },
   "recent_commits": [],
-  "recently_updated_repos": [],
-  "languages": []
+  "recently_updated_repos": [
+    {
+      "name": "Portfolio",
+      "url": "https://github.com/chloeatwood/Portfolio",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "pushed_at": "2026-09-03T21:32:02Z"
+    },
+    {
+      "name": "Expedia-clone",
+      "url": "https://github.com/chloeatwood/Expedia-clone",
+      "description": "Clone of Expedia.in which is basically a travel helping hand website, where one can book flights, trains and hotels also explore places.",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushed_at": "2026-09-03T19:27:00Z"
+    },
+    {
+      "name": "BookScout",
+      "url": "https://github.com/chloeatwood/BookScout",
+      "description": "Personal Project Book Tracker. Hopefully will one day track the prices of books from different websites so that a user can find the cheapest option to buy a book.",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushed_at": "2026-09-03T15:40:12Z"
+    },
+    {
+      "name": "ML-Learning",
+      "url": "https://github.com/chloeatwood/ML-Learning",
+      "description": "The space I am using in an attempt to learn ML and AI concepts",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2026-09-02T23:31:21Z"
+    },
+    {
+      "name": "Photo-Gallery-Website-Using-Google-Cloud-Console",
+      "url": "https://github.com/chloeatwood/Photo-Gallery-Website-Using-Google-Cloud-Console",
+      "description": null,
+      "language": "CSS",
+      "stars": 0,
+      "pushed_at": "2026-05-06T20:31:37Z"
+    },
+    {
+      "name": "Chat-N-Rate",
+      "url": "https://github.com/chloeatwood/Chat-N-Rate",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "pushed_at": "2026-05-06T20:19:21Z"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Python",
+      "percent": 21.7
+    },
+    {
+      "language": "HTML",
+      "percent": 17.4
+    },
+    {
+      "language": "JavaScript",
+      "percent": 17.4
+    },
+    {
+      "language": "C",
+      "percent": 17.4
+    },
+    {
+      "language": "CSS",
+      "percent": 8.7
+    },
+    {
+      "language": "C#",
+      "percent": 8.7
+    },
+    {
+      "language": "TypeScript",
+      "percent": 4.3
+    },
+    {
+      "language": "C++",
+      "percent": 4.3
+    }
+  ]
 }

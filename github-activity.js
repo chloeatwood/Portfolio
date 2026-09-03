@@ -41,7 +41,7 @@
   }
 
   function renderHeatmap(heatmap) {
-    const days = Object.keys(heatmap || {}).slice(-119); // ~17 weeks
+    const days = Object.keys(heatmap || {}).slice(-371); // ~53 weeks, matches GitHub's own graph
     if (!days.length) {
       return `<p class="gh-empty">No recent public activity to show yet.</p>`;
     }
