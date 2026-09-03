@@ -344,6 +344,45 @@
         
     </section>
 
+
+    <section id="github-activity" class="github-activity">
+        <h2>GitHub Activity</h2>
+        <hr>
+        <p class="gh-subtitle">
+            A live snapshot of what I'm building right now, pulled straight from my public GitHub activity.
+        </p>
+        <span id="gh-last-updated" class="gh-last-updated"></span>
+
+        <div class="gh-activity-body">
+            <!-- Currently Working On -->
+            <div id="gh-working-on"></div>
+
+            <!-- Contribution heatmap -->
+            <div class="gh-panel">
+                <h4>Recent Activity</h4>
+                <div id="gh-heatmap"></div>
+            </div>
+
+            <!-- Recent commits -->
+            <div class="gh-panel">
+                <h4>Recent Commits</h4>
+                <div id="gh-recent-commits"></div>
+            </div>
+
+            <!-- Recently updated repos -->
+            <div class="gh-panel">
+                <h4>Recently Updated Repositories</h4>
+                <div id="gh-recent-repos"></div>
+            </div>
+
+            <!-- Language breakdown -->
+            <div class="gh-panel">
+                <h4>Languages I've Been Using</h4>
+                <div id="gh-languages"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <h2>Projects</h2>
@@ -833,6 +872,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="github-activity.js"></script>
 
 </body>
 <!-- Can check analytics here:https://chloeatwood.goatcounter.com/ -->

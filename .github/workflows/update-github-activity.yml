@@ -1,0 +1,43 @@
+name: Update GitHub Activity
+
+on:
+  schedule:
+    # Runs every day at 13:00 UTC. Adjust as you like.
+    - cron: "0 13 * * *"
+  workflow_dispatch: {} # lets you trigger it manually from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - "scripts/fetch_github_activity.py"
+
+permissions:
+  contents: write # needed so the workflow can commit the updated JSON
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch GitHub activity
+        env:
+          GITHUB_USERNAME: chloeatwood
+          OUTPUT_PATH: data/github-activity.json
+          # GITHUB_TOKEN is provided automatically by Actions -- only used
+          # to raise the API rate limit, never exposed to site visitors.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_github_activity.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/github-activity.json
+          git diff --staged --quiet || git commit -m "chore: update GitHub activity data [skip ci]"
+          git push
