@@ -1,6 +1,6 @@
 {
   "username": "chloeatwood",
-  "generated_at": "2026-09-04T16:47:03.235243+00:00",
+  "generated_at": "2026-09-05T15:50:40.647046+00:00",
   "currently_working_on": [
     {
       "repo": "BookScout",
@@ -388,9 +388,34 @@
     "2026-09-01": 0,
     "2026-09-02": 3,
     "2026-09-03": 14,
-    "2026-09-04": 0
+    "2026-09-04": 0,
+    "2026-09-05": 0
   },
   "recent_commits": [
+    {
+      "repo": "chloeatwood/Expedia-clone",
+      "message": "adding contributing.md file",
+      "sha": "26894fc",
+      "date": "2026-09-04T19:31:48Z"
+    },
+    {
+      "repo": "chloeatwood/Expedia-clone",
+      "message": "Updated README again",
+      "sha": "8af6e71",
+      "date": "2026-09-04T19:28:15Z"
+    },
+    {
+      "repo": "chloeatwood/Expedia-clone",
+      "message": "Updating README",
+      "sha": "7f4d54b",
+      "date": "2026-09-04T19:26:35Z"
+    },
+    {
+      "repo": "chloeatwood/Expedia-clone",
+      "message": "Updated README",
+      "sha": "8480705",
+      "date": "2026-09-04T19:09:36Z"
+    },
     {
       "repo": "chloeatwood/Expedia-clone",
       "message": "Got all the bugs fixed and set everything up so it can run locally",
@@ -414,30 +439,6 @@
       "message": "Updating current project",
       "sha": "1daa2a5",
       "date": "2026-09-03T22:32:26Z"
-    },
-    {
-      "repo": "chloeatwood/Portfolio",
-      "message": "heatmap formatting",
-      "sha": "900b310",
-      "date": "2026-09-03T22:28:59Z"
-    },
-    {
-      "repo": "chloeatwood/Portfolio",
-      "message": "More heatmap formatting",
-      "sha": "98945aa",
-      "date": "2026-09-03T22:21:57Z"
-    },
-    {
-      "repo": "chloeatwood/BookScout",
-      "message": "Updating README",
-      "sha": "54f8d23",
-      "date": "2026-09-03T15:40:07Z"
-    },
-    {
-      "repo": "chloeatwood/ML-Learning",
-      "message": "AI Chat bot",
-      "sha": "b7387e7",
-      "date": "2026-09-02T23:31:16Z"
     }
   ],
   "recently_updated_repos": [
@@ -446,14 +447,14 @@
       "url": "https://github.com/chloeatwood/Expedia-clone",
       "description": "Clone of Expedia.in which is basically a travel helping hand website, where one can book flights, trains and hotels also explore places.",
       "language": "JavaScript",
-      "pushed_at": "2026-09-04T02:53:21Z"
+      "pushed_at": "2026-09-04T19:31:50Z"
     },
     {
       "name": "Portfolio",
       "url": "https://github.com/chloeatwood/Portfolio",
       "description": null,
       "language": "HTML",
-      "pushed_at": "2026-09-03T22:48:43Z"
+      "pushed_at": "2026-09-04T16:47:07Z"
     },
     {
       "name": "BookScout",
