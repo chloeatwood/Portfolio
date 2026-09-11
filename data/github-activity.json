@@ -1,6 +1,6 @@
 {
   "username": "chloeatwood",
-  "generated_at": "2026-09-10T16:55:30.597005+00:00",
+  "generated_at": "2026-09-11T16:57:00.465327+00:00",
   "currently_working_on": [
     {
       "repo": "BookScout",
@@ -387,9 +387,28 @@
     "2026-09-07": 0,
     "2026-09-08": 0,
     "2026-09-09": 0,
-    "2026-09-10": 0
+    "2026-09-10": 0,
+    "2026-09-11": 3
   },
   "recent_commits": [
+    {
+      "repo": "chloeatwood/ML-Learning",
+      "message": "Learning to web scrap with BeautifulSoup",
+      "sha": "8e322ca",
+      "date": "2026-09-11T16:33:16Z"
+    },
+    {
+      "repo": "chloeatwood/ML-Learning",
+      "message": "Learning how to predict prices with linear regression",
+      "sha": "46b7186",
+      "date": "2026-09-11T16:07:16Z"
+    },
+    {
+      "repo": "chloeatwood/ML-Learning",
+      "message": "Practicing analyzing data sets",
+      "sha": "13161b3",
+      "date": "2026-09-11T15:48:38Z"
+    },
     {
       "repo": "chloeatwood/BookScout",
       "message": "Updating README and adding some notes",
@@ -419,33 +438,22 @@
       "message": "Adding QR scan search ability",
       "sha": "842d0fc",
       "date": "2026-09-05T17:27:24Z"
-    },
-    {
-      "repo": "chloeatwood/Expedia-clone",
-      "message": "adding contributing.md file",
-      "sha": "26894fc",
-      "date": "2026-09-04T19:31:48Z"
-    },
-    {
-      "repo": "chloeatwood/Expedia-clone",
-      "message": "Updated README again",
-      "sha": "8af6e71",
-      "date": "2026-09-04T19:28:15Z"
-    },
-    {
-      "repo": "chloeatwood/Expedia-clone",
-      "message": "Updating README",
-      "sha": "7f4d54b",
-      "date": "2026-09-04T19:26:35Z"
     }
   ],
   "recently_updated_repos": [
+    {
+      "name": "ML-Learning",
+      "url": "https://github.com/chloeatwood/ML-Learning",
+      "description": "The space I am using in an attempt to learn ML and AI concepts",
+      "language": "Python",
+      "pushed_at": "2026-09-11T16:33:01Z"
+    },
     {
       "name": "Portfolio",
       "url": "https://github.com/chloeatwood/Portfolio",
       "description": null,
       "language": "HTML",
-      "pushed_at": "2026-09-09T17:04:04Z"
+      "pushed_at": "2026-09-10T16:55:34Z"
     },
     {
       "name": "BookScout",
@@ -460,13 +468,6 @@
       "description": "Clone of Expedia.in which is basically a travel helping hand website, where one can book flights, trains and hotels also explore places.",
       "language": "JavaScript",
       "pushed_at": "2026-09-04T19:31:50Z"
-    },
-    {
-      "name": "ML-Learning",
-      "url": "https://github.com/chloeatwood/ML-Learning",
-      "description": "The space I am using in an attempt to learn ML and AI concepts",
-      "language": "Python",
-      "pushed_at": "2026-09-02T23:31:21Z"
     },
     {
       "name": "Photo-Gallery-Website-Using-Google-Cloud-Console",
