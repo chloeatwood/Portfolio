@@ -1,6 +1,6 @@
 {
   "username": "chloeatwood",
-  "generated_at": "2026-09-11T16:57:00.465327+00:00",
+  "generated_at": "2026-09-12T16:04:38.073541+00:00",
   "currently_working_on": [
     {
       "repo": "BookScout",
@@ -388,9 +388,40 @@
     "2026-09-08": 0,
     "2026-09-09": 0,
     "2026-09-10": 0,
-    "2026-09-11": 3
+    "2026-09-11": 9,
+    "2026-09-12": 0
   },
   "recent_commits": [
+    {
+      "repo": "chloeatwood/BookScout",
+      "message": "Updating README and schema info and bugs notes",
+      "sha": "6e3e941",
+      "date": "2026-09-11T21:58:58Z"
+    },
+    {
+      "repo": "chloeatwood/BookScout",
+      "message": "Worked on search through own books funtionality",
+      "sha": "5330601",
+      "date": "2026-09-11T21:50:01Z"
+    },
+    {
+      "repo": "chloeatwood/BookScout",
+      "message": "Can now add/remove books, updates books, lists are updated to pull from users books and not use dummy data",
+      "sha": "45b58df",
+      "date": "2026-09-11T21:46:32Z"
+    },
+    {
+      "repo": "chloeatwood/BookScout",
+      "message": "Finished loging/logout account creation and account deletion. Also completed help/feedback button page",
+      "sha": "ef68f96",
+      "date": "2026-09-11T19:36:17Z"
+    },
+    {
+      "repo": "chloeatwood/BookScout",
+      "message": "Basic Login, Logout, and Account creation setup",
+      "sha": "17d2b75",
+      "date": "2026-09-11T18:44:28Z"
+    },
     {
       "repo": "chloeatwood/ML-Learning",
       "message": "Learning to web scrap with BeautifulSoup",
@@ -408,59 +439,29 @@
       "message": "Practicing analyzing data sets",
       "sha": "13161b3",
       "date": "2026-09-11T15:48:38Z"
-    },
-    {
-      "repo": "chloeatwood/BookScout",
-      "message": "Updating README and adding some notes",
-      "sha": "4cb6e1c",
-      "date": "2026-09-05T20:47:52Z"
-    },
-    {
-      "repo": "chloeatwood/BookScout",
-      "message": "updating readme",
-      "sha": "8635194",
-      "date": "2026-09-05T19:22:54Z"
-    },
-    {
-      "repo": "chloeatwood/BookScout",
-      "message": "Updated list view. Updated dummy data to be more realistic. Updated UI",
-      "sha": "5609e8b",
-      "date": "2026-09-05T19:18:13Z"
-    },
-    {
-      "repo": "chloeatwood/BookScout",
-      "message": "Updating some UI",
-      "sha": "519c852",
-      "date": "2026-09-05T18:25:18Z"
-    },
-    {
-      "repo": "chloeatwood/BookScout",
-      "message": "Adding QR scan search ability",
-      "sha": "842d0fc",
-      "date": "2026-09-05T17:27:24Z"
     }
   ],
   "recently_updated_repos": [
     {
-      "name": "ML-Learning",
-      "url": "https://github.com/chloeatwood/ML-Learning",
-      "description": "The space I am using in an attempt to learn ML and AI concepts",
-      "language": "Python",
-      "pushed_at": "2026-09-11T16:33:01Z"
+      "name": "BookScout",
+      "url": "https://github.com/chloeatwood/BookScout",
+      "description": "Personal Project Book Tracker. Hopefully will one day track the prices of books from different websites so that a user can find the cheapest option to buy a book.",
+      "language": "TypeScript",
+      "pushed_at": "2026-09-11T21:58:44Z"
     },
     {
       "name": "Portfolio",
       "url": "https://github.com/chloeatwood/Portfolio",
       "description": null,
       "language": "HTML",
-      "pushed_at": "2026-09-10T16:55:34Z"
+      "pushed_at": "2026-09-11T16:57:03Z"
     },
     {
-      "name": "BookScout",
-      "url": "https://github.com/chloeatwood/BookScout",
-      "description": "Personal Project Book Tracker. Hopefully will one day track the prices of books from different websites so that a user can find the cheapest option to buy a book.",
-      "language": "TypeScript",
-      "pushed_at": "2026-09-05T20:47:56Z"
+      "name": "ML-Learning",
+      "url": "https://github.com/chloeatwood/ML-Learning",
+      "description": "The space I am using in an attempt to learn ML and AI concepts",
+      "language": "Python",
+      "pushed_at": "2026-09-11T16:33:01Z"
     },
     {
       "name": "Expedia-clone",
